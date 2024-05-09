@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========
+  #CONFIG
+  ========== */
+@import "mq";
+@import "config/variables";
+@import "config/reboot";
+
+/* ==========
+  #PLUGIN
+  ========== */
+@import "plugin/aos/aos";
+@import "plugin/swiper/swiper";
+@import "plugin/photoswipe/photoswipe";
+@import "plugin/photoswipe/default-skin";
+
+/* ==========
+  #UTILITIES
+  ========== */
+@import "utilities/gap";
+
+/* ==========
+  #COMPONENTS
+  ========== */
+
+/* ==========
+  #LAYOUT
+  ========== */
+
+/* ==========
+  #PAGES
+  ========== */

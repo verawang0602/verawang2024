@@ -1,0 +1,41 @@
+// sass-mq 使用方式
+// @include mq($from: 斷點) {} 編譯後 @media (min-width: 斷點)
+// @include mq($until: 斷點) {} 編譯後 @media (max-width: 斷點)
+$mq-breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  \32xl: 1536px,
+);
+
+// 主副色，依照專案調整
+$primary: #ff0000;
+$secondary: #00ff00;
+$danger: #ff4444;
+
+// 黑白色
+$black: #000000;
+$white: #ffffff;
+
+// 灰階，依照專案調整
+$gray-100: #eeeeee;
+$gray-200: #dddddd;
+$gray-300: #cccccc;
+$gray-400: #bbbbbb;
+$gray-500: #aaaaaa;
+$gray-600: #999999;
+$gray-700: #666666;
+$gray-800: #333333;
+$gray-900: #222222;
+
+// 網格間距 GAP
+$gap: (
+  0: 0,
+  2\.5: 0.625rem,
+  5: 1.25rem,
+  7\.5: 1.875rem,
+  10: 2.5rem,
+  12\.5: 3.125rem,
+  15: 3.75rem,
+);
