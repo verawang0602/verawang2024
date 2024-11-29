@@ -1,0 +1,36 @@
+<script>
+  const target_parallax = () => {
+    function setParallax(type, target) {
+      let offset = {};
+
+      if (type === "horizontal") {
+        offset = {
+          x: (window.innerWidth * target.dataset["parallaxX"]) / 10,
+        };
+      } else if ((type = "vertical")) {
+        offset = {
+          y: (window.innerHeight * target.dataset["parallaxY"]) / 10,
+        };
+      }
+
+      gsap.to(target, {
+        scrollTrigger: {
+          trigger: target,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1,
+        },
+        ...offset,
+        ease: "none",
+      });
+    }
+    gsap.utils.toArray("[data-parallax-x]").forEach((target) => {
+      setParallax("horizontal", target);
+    });
+
+    gsap.utils.toArray("[data-parallax-y]").forEach((target) => {
+      setParallax("vertical", target);
+    });
+  };
+  target_parallax();
+</script>

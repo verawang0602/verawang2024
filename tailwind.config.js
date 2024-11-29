@@ -6,7 +6,7 @@ module.exports = {
     // standardFontWeights: true
   },
   purge: {
-    enabled: true,
+    // enabled: true,
     content: ["./src/**/*.{html,js}"],
   },
   theme: {
@@ -19,6 +19,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["'Noto Sans TC'", "sans-serif"],
+      manrope: ["Manrope", "sans-serif"],
     },
     fontSize: {
       "12px": ".75rem",
@@ -30,6 +31,7 @@ module.exports = {
       "32px": "2rem",
       "40px": "2.5rem",
       "48px": "3rem",
+      "80px": "5rem",
     },
     opacity: {
       0: "0",
@@ -46,8 +48,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#ff0000",
-        secondary: "#00ffff",
+        primary: "#D46E24",
+        secondary: "#E0AA40",
         danger: "#ff4444",
         gray: {
           100: "#eeeeee",

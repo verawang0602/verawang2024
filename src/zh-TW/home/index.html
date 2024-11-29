@@ -10,11 +10,98 @@
   <body>
     <!-- @@include ../include/header.html -->
     <main>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>Just test git function!</h1>
+      <section>
+        <div class="w-full h-screen">
+          <div
+            class="index-banner-tbox-outer w-full h-full z-10 absolute lg:fixed top-0 left-0 flex justify-center items-center"
+          >
+            <div class="rel" id="index-banner-tbox">
+              <img
+                src="https://acon-eco.soez.com.tw/assets/img/icon/index-banner-logo.svg"
+                alt=""
+                class="w-30 block mx-auto"
+              />
+              <div class="font-manrope text-center">
+                <h1
+                  class="lg:text-80px md:text-48px text-40px text-gray-900 font-semibold"
+                >
+                  停車充電 無感體驗
+                </h1>
+                <h2 class="md:text-24px text-18px text-secondary mt-5">
+                  創造電動車智慧生活
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="relative w-full h-full bg-gray-100 z-0 lg:fixed"></div>
+        </div>
+      </section>
+      <section class="relative z-20 bg-white lg:rounded-t-3xl">
+        <div class="relative px-10 pt-15 pb-17.5 lg:pt-20 lg:pb-30">
+          <div class="mx-auto max-w-250">
+            <div
+              class="mt-10 space-y-9 leading-1.75 tracking-1px lg:mt-20 lg:text-18px lg:leading-1.88"
+            >
+              <p class="">
+                林開泰醫師 ( 1895－1942 )
+                是日治時代臺灣詩壇知名的詩人，書法家。大正五年 ( 1916 )
+                臺灣總督府醫學校畢業後，返鄉行醫，遇有貧困患者不收費，鄉人稱為「詩人良醫」或「聖人」
+              </p>
+              <p>
+                開泰醫師的父親，晚清秀才林維朝 ( 1868－1934 )
+                ，以詩文書法享譽南臺灣。日治時代，他在家中開館授課，組織詩社，維繫漢文化的傳承；號召鄉民修建地震摧毀的奉天宮、大興宮；歷任新港區街庄長、嘉義廳參事、臺南州協議員，更兼嘉義銀行頭取
+                ( 董事長 ) ，是新港最具聲望的領導人物<br />
+              </p>
+              <div
+                class="space-y-9 leading-1.75 tracking-1px lg:text-18px lg:leading-1.88"
+              >
+                <p>
+                  日治昭和八年 ( 1933 )
+                  開泰醫師家族住進這個宅第。面街的房舍作為診所，後方是家人起居的住宅。開泰醫師十一位兒女在這裡成長，走向臺灣各地，走向海外，在不同的領域，為社會作出貢獻，在國際上也有重要的影響。鄉人因此暱稱林宅為「博士窩」<br />
+                </p>
+                <p>
+                  開泰醫師的子孫中，有幾位是社會大眾熟悉的人物。長子林金生歷任嘉義縣、雲林縣縣長，內政部、交通部部長與總統府資政。次子林新澤先後擔任臺灣省肺結核防治院院長，WHO西太平洋區國際防癆顧問隊隊長。三子林本仁開創高雄醫學院耳鼻喉科。創辦雲門舞集的長孫林懷民，是國際尊崇的編舞家，率領雲門舞集全球巡演，提升臺灣文化形象<br />
+                </p>
+                <p>
+                  2016年，嘉義縣政府鑒於林家宅第在歷史、政治、建築、醫療和文化的深刻價值，將「林開泰診療所舊宅」指定為古蹟，林氏家族秉持「公爾忘私」的家訓，捐出宅第。嘉義縣政府展開前置調查、修復及再利用規劃，在文化部補助下，2020年開工修復<br />
+                </p>
+
+                <p>
+                  2022年，「林開泰診療所舊宅」修復完成，以大廳林維朝所題的「培桂堂」為號，對外開放，為社會大眾提供一個文化體驗的場域<br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <!-- @@include ../include/footer.html -->
     <!-- @@include ../include/javascript.html -->
+    <!-- @@include ../include/target_parallax.html -->
+    <script>
+      var indexTextAnimation = document.querySelector(
+        ".index-banner-tbox-outer"
+      );
+
+      // 检查视口宽度是否大于等于1280像素
+      if (window.innerWidth >= 1280) {
+        // 创建时间轴动画，用于初始时的依次出现
+        var tl = gsap.timeline();
+        gsap.to(indexTextAnimation, {
+          y: 0,
+          scale: 0.5,
+          duration: 2.5, // 增加持续时间使缩放更流畅
+          ease: "power1.out", // 使用更平滑的缓动效果
+          scrollTrigger: {
+            trigger: indexTextAnimation,
+            start: "top top+=20",
+            scrub: true,
+            end: "+=500",
+            // markers: true
+          },
+        });
+      }
+    </script>
   </body>
 </html>
