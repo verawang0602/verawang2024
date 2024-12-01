@@ -20,6 +20,7 @@ module.exports = {
     fontFamily: {
       sans: ["'Noto Sans TC'", "sans-serif"],
       manrope: ["Manrope", "sans-serif"],
+      karla: ["Manrope", "sans-serif"],
     },
     fontSize: {
       "12px": ".75rem",
@@ -29,8 +30,10 @@ module.exports = {
       "20px": "1.25rem",
       "24px": "1.5rem",
       "32px": "2rem",
+      "36px": "2.25rem",
       "40px": "2.5rem",
       "48px": "3rem",
+      "68px": "4.25rem",
       "80px": "5rem",
     },
     opacity: {
@@ -48,20 +51,24 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#D46E24",
-        secondary: "#E0AA40",
+        primary: "#d46e24",
+        secondary: "#e0aa40",
         danger: "#ff4444",
+        bg_gray: "#fdfdfd",
         gray: {
           100: "#eeeeee",
           200: "#dddddd",
           300: "#cccccc",
           400: "#bbbbbb",
           500: "#aaaaaa",
-          600: "#999999",
+          600: "#888888",
           700: "#666666",
-          800: "#333333",
+          800: "#555555",
           900: "#222222",
         },
+      },
+      boxShadow: {
+        "3xl": "0 0 40px -15px rgba(0, 0, 0, 0.25)",
       },
       spacing: {
         0.5: "0.125rem",
@@ -119,6 +126,9 @@ module.exports = {
         82.5: "20.625rem",
         84: "21rem",
         90: "22.5rem",
+        350: "21.875rem",
+        500: "31.25rem",
+        650: "40.625rem",
         "1/8": "12.5%",
         "1/5": "20%",
         "1/4": "25%",
@@ -129,11 +139,19 @@ module.exports = {
         "56.25%": "56.25%",
         full: "100%",
       },
-      maxWidth: {},
-      minWidth: {},
+      maxWidth: {
+        200: "12.5rem",
+        1440: "90rem",
+      },
+      minWidth: {
+        180: "11.25rem",
+        220: "13.75rem",
+      },
       maxHeight: {},
       minHeight: {},
-      borderRadius: {},
+      borderRadius: {
+        15: "3.75rem",
+      },
       inset: {
         "-0.5": "-0.125rem",
         "-0.75": "-0.1875rem",
@@ -206,6 +224,7 @@ module.exports = {
       },
       zIndex: {
         "-1": "-1",
+        5: "5",
         60: "60",
         70: "70",
         80: "80",

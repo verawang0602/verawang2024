@@ -49,12 +49,36 @@
         });
     };
 
+    var scrollHeader = function scrollHeader() {
+        function checkWindowPosition() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 0) {
+                $(".site-header__bg").removeClass("h-0");
+                $(".site-header__bg").addClass("h-full");
+                $(".site-header__main").removeClass("lg:h-20");
+                $(".site-header__main").addClass("lg:h-16");
+                $(".go-top").removeClass("opacity-0 invisible");
+                $(".go-top").addClass("opacity-100 visible");
+            } else {
+                $(".site-header__bg").removeClass("h-full");
+                $(".site-header__bg").addClass("h-0");
+                $(".site-header__main").removeClass("lg:h-16");
+                $(".site-header__main").addClass("lg:h-20");
+                $(".go-top").removeClass("opacity-100 visible");
+                $(".go-top").addClass("opacity-0 invisible");
+            }
+        }
+        checkWindowPosition();
+        $(window).on("scroll", checkWindowPosition);
+    };
+
     $(function () {
         initSwiper();
         initAnimation();
         scrollWindow();
         goAnchor();
         goTop();
+        scrollHeader();
     });
 })(jQuery);
 
