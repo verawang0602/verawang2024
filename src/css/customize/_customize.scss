@@ -1,0 +1,251 @@
+.site-header__bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.wrapper-menu {
+  width: 25px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 330ms ease-out;
+}
+
+.wrapper-menu.open {
+  transform: rotate(-45deg);
+}
+
+.line-menu {
+  background-color: #555555;
+  border-radius: 5px;
+  width: 100%;
+  height: 4px;
+}
+
+.line-menu.half {
+  width: 50%;
+}
+
+.line-menu.start {
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: right;
+}
+
+.open .line-menu.start {
+  transform: rotate(-90deg) translateX(4px);
+}
+
+.line-menu.end {
+  align-self: flex-end;
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: left;
+}
+
+.open .line-menu.end {
+  transform: rotate(-90deg) translateX(-4px);
+}
+
+.card-bg {
+  background-image: url(../../img/home/home-card-bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.card-bg_2 {
+    background-image: url(../../img/home/home-card-bg-2.jpg);
+  }
+  &.card-bg_3 {
+    background-image: url(../../img/home/home-card-bg-3.jpg);
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.more-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  p {
+    position: relative;
+    z-index: 2;
+    color: $gray-900;
+    transition: color 0.5s ease-in-out;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: $gray-900;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:before {
+    left: -20px;
+    transform: translate(-50%, -50%);
+  }
+
+  &:after {
+    right: -20px;
+    transform: translate(50%, -50%);
+  }
+
+  @include mq(sm) {
+    max-width: 180px;
+    &:hover {
+      p {
+        color: $gray-200;
+      }
+      &:before {
+        animation: criss-cross-left 0.8s both;
+        animation-direction: alternate;
+      }
+
+      &:after {
+        animation: criss-cross-right 0.8s both;
+        animation-direction: alternate;
+      }
+    }
+  }
+}
+
+.about-bg {
+  background-image: url(../../img/home/home-about-bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.home-profile-group {
+  width: 500/1920 * 100%;
+  .profile-contact {
+    &:first-child {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.5s ease-in-out;
+    }
+    &:last-child {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease-in-out;
+      img {
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+  @include mq(sm) {
+    &:hover {
+      button {
+        .profile-contact {
+          &:first-child {
+            opacity: 0;
+            visibility: hidden;
+          }
+          &:last-child {
+            opacity: 1;
+            visibility: visible;
+            img {
+              transform: scale(1.125);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.profile-icon-1 {
+  width: 80/500 * 100%;
+  top: 80/580 * 100%;
+  left: 60/500 * 100%;
+}
+
+.profile-icon-2 {
+  width: 106/500 * 100%;
+  top: 120/580 * 100%;
+  right: 0;
+}
+
+.profile-icon-3 {
+  width: 106/500 * 100%;
+  top: 300/580 * 100%;
+  left: 35/500 * 100%;
+}
+
+// .profile-contact {
+//   width: 395/500 * 100%;
+//   bottom: -205/580 * 100%;
+// }
+
+.profile-w {
+  width: 395/500 * 100%;
+  bottom: -205/580 * 100%;
+  .profile-pb {
+    width: 100%;
+    padding-bottom: 395/395 * 100%;
+    transition: all 0.5s ease-in-out;
+
+    svg {
+      width: 200/395 * 100%;
+      transform: translate(-50%, -50%);
+      path {
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+  @include mq(sm) {
+    &:hover {
+      .profile-pb {
+        transform: scale(1.125);
+        background-color: $gray-900;
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+}
