@@ -1,1 +1,24 @@
-<header></header>
+<header class="site-header fixed top-0 left-0 w-full z-40">
+  <div
+    class="site-header__bg absolute top-0 left-0 w-full transition-height duration-500 h-0"
+  ></div>
+  <div
+    class="site-header__main relative flex justify-between items-center h-20 px-7.5 transition-height duration-500 xl:px-15 lg:h-20"
+  >
+    <a href="javascript:;">
+      <h1><img src="../../img/home/Vera.svg" alt="" /></h1>
+    </a>
+    <div class="wrapper-menu">
+      <div class="line-menu half start"></div>
+      <div class="line-menu"></div>
+      <div class="line-menu half end"></div>
+    </div>
+  </div>
+</header>
+<script>
+  var wrapperMenu = document.querySelector(".wrapper-menu");
+
+  wrapperMenu.addEventListener("click", function () {
+    wrapperMenu.classList.toggle("open");
+  });
+</script>
