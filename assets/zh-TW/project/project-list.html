@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>專案名稱</title>
+    <link rel="stylesheet" href="../../css/all.css" />
+  </head>
+  <body>
+<!-- start header.html-->
+<header class="site-header fixed top-0 left-0 w-full z-40">
+  <div
+    class="site-header__bg absolute top-0 left-0 w-full transition-height duration-500 h-0"
+  ></div>
+  <div
+    class="site-header__main relative flex justify-between items-center h-20 px-7.5 transition-height duration-500 xl:px-15 lg:h-20"
+  >
+    <a href="javascript:;">
+      <h1><img src="../../img/home/Vera.svg" alt="" /></h1>
+    </a>
+    <div class="wrapper-menu">
+      <div class="line-menu half start"></div>
+      <div class="line-menu"></div>
+      <div class="line-menu half end"></div>
+    </div>
+  </div>
+</header>
+<script>
+  var wrapperMenu = document.querySelector(".wrapper-menu");
+
+  wrapperMenu.addEventListener("click", function () {
+    wrapperMenu.classList.toggle("open");
+  });
+</script>
+
+<!-- end header.html-->
+    <main>
+      <section>
+        <div class="w-full h-full fixed">
+          <img
+            class="absolute w-full h-full top-0 left-0 object-center object-cover"
+            src="../../img/project/project-circle.png"
+            alt=""
+          />
+        </div>
+        <div class="relative px-10 pt-15 pb-17.5 lg:py-30">
+          <div class="mx-auto max-w-1440">
+            <div class="flex flex-wrap lg:items-start gap-15 lg:gap-25">
+              <ul class="sticky top-25 md:space-y-8 lg:w-45 w-full z-10">
+                <li
+                  class="group px-5 py-3 border border-gray-600 rounded bg-white duration-300 hover:bg-black text-center"
+                >
+                  <a
+                    href="javascript:;"
+                    class="lg:text-18px text-black w-full duration-300 group-hover:text-white"
+                    >UIUX Design</a
+                  >
+                </li>
+                <li
+                  class="group px-5 py-3 border border-gray-600 rounded bg-white duration-300 hover:bg-black text-center"
+                >
+                  <a
+                    href="javascript:;"
+                    class="lg:text-18px text-black w-full duration-300 group-hover:text-white"
+                    >視覺形象網站</a
+                  >
+                </li>
+                <li
+                  class="group px-5 py-3 border border-gray-600 rounded bg-white duration-300 hover:bg-black text-center"
+                >
+                  <a
+                    href="javascript:;"
+                    class="lg:text-18px text-black w-full duration-300 group-hover:text-white"
+                    >前端切版網站</a
+                  >
+                </li>
+              </ul>
+              <div class="flex-1" style="height: 2000px">
+                <h2
+                  class="lg:text-48px text-32px font-medium lg:mb-15 mb-7 lg:pb-8 pb-5 border-b border-gray-600"
+                >
+                  專案介紹
+                </h2>
+                <h3
+                  class="text-gray-900 text-36px font-semibold font-manrope mb-4"
+                >
+                  <span class="text-gray-600 mr-4 font-medium">01</span>UIUX
+                  Design
+                </h3>
+                <p class="lg:text-18px text-gray-700">
+                  基礎UX訪談與研究，依照產品特性規劃友善使用體驗的介面。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<!-- start footer.html-->
+<footer class="relative z-50 bg-gray-900 px-10 py-10 lg:py-12 lg:rounded-t-3xl">
+  <div class="mx-auto max-w-1440">
+    <div
+      class="flex flex-wrap gap-4 items-center justify-between pb-7 border-b border-white border-solid"
+    >
+      <a href="javascript:;">
+        <h1><img src="../../img/footer/footer-vera.svg" alt="" /></h1>
+      </a>
+      <div class="flex-wrap gap-7 hidden sm:flex">
+        <a
+          href="javascript:;"
+          class="lg:text-20px text-16px text-white duration-300 hover:underline"
+          >經歷介紹</a
+        >
+        <a
+          href="javascript:;"
+          class="lg:text-20px text-16px text-white duration-300 hover:underline"
+          >UIUX Design</a
+        >
+        <a
+          href="javascript:;"
+          class="lg:text-20px text-16px text-white duration-300 hover:underline"
+          >前端切版網站</a
+        >
+        <a
+          href="javascript:;"
+          class="lg:text-20px text-16px text-white duration-300 hover:underline"
+          >視覺形象網站</a
+        >
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-4 items-center justify-between mt-7">
+      <div class="flex flex-wrap items-center lg:gap-7 gap-4">
+        <a
+          href="mailto:q727877q@gmail.com"
+          target="_blank"
+          class="flex gap-x-2 lg:text-18px text-16px text-white font-medium duration-300 hover:underline"
+          ><span class="lg:w-7 w-5"
+            ><img src="../../img/footer/icon-email.svg" alt="" /></span
+          >q727877q@gmail.com</a
+        >
+        <a
+          href="tel:0928562898"
+          class="flex gap-x-2 lg:text-18px text-16px text-white font-medium duration-300 hover:underline"
+          ><span class="lg:w-7 w-5"
+            ><img src="../../img/footer/icon-phone.svg" alt="" /></span
+          >0928-562-898</a
+        >
+      </div>
+      <p class="text-gray-600">
+        © 2025 Vera Wang Powered by Tailwindcss, Nude.js, and GitHub.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- end footer.html-->
+<!-- start javascript.html-->
+<script src="../../js/vendor.js"></script>
+<script src="../../js/app.js"></script>
+
+<!-- end javascript.html-->
+<!-- start target_parallax.html-->
+<script>
+  const target_parallax = () => {
+    function setParallax(type, target) {
+      let offset = {};
+
+      if (type === "horizontal") {
+        offset = {
+          x: (window.innerWidth * target.dataset["parallaxX"]) / 10,
+        };
+      } else if ((type = "vertical")) {
+        offset = {
+          y: (window.innerHeight * target.dataset["parallaxY"]) / 10,
+        };
+      }
+
+      gsap.to(target, {
+        scrollTrigger: {
+          trigger: target,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1,
+        },
+        ...offset,
+        ease: "none",
+      });
+    }
+    gsap.utils.toArray("[data-parallax-x]").forEach((target) => {
+      setParallax("horizontal", target);
+    });
+
+    gsap.utils.toArray("[data-parallax-y]").forEach((target) => {
+      setParallax("vertical", target);
+    });
+  };
+  target_parallax();
+</script>
+
+<!-- end target_parallax.html-->
+  </body>
+</html>

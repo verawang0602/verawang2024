@@ -240,6 +240,7 @@ module.exports = {
     textColor: ["responsive", "group-hover", "hover", "focus"],
     backgroundColor: ["responsive", "group-hover", "hover", "focus"],
     borderColor: ["responsive", "group-hover", "hover", "focus"],
+    scale: ["responsive", "group-hover", "hover", "focus"],
     inset: ["responsive", "group-hover", "hover", "focus"],
     opacity: ["responsive", "group-hover", "hover", "focus"],
     visibility: ["responsive", "group-hover", "hover", "focus"],

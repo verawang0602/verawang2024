@@ -108,6 +108,9 @@
     color: $gray-900;
     transition: color 0.5s ease-in-out;
   }
+  @include mq(sm) {
+    max-width: 180px;
+  }
 
   &:before,
   &:after {
@@ -131,21 +134,24 @@
     right: -20px;
     transform: translate(50%, -50%);
   }
+}
 
+.home-project {
   @include mq(sm) {
-    max-width: 180px;
     &:hover {
-      p {
-        color: $gray-200;
-      }
-      &:before {
-        animation: criss-cross-left 0.8s both;
-        animation-direction: alternate;
-      }
+      .more-btn {
+        p {
+          color: $gray-200;
+        }
+        &:before {
+          animation: criss-cross-left 0.8s both;
+          animation-direction: alternate;
+        }
 
-      &:after {
-        animation: criss-cross-right 0.8s both;
-        animation-direction: alternate;
+        &:after {
+          animation: criss-cross-right 0.8s both;
+          animation-direction: alternate;
+        }
       }
     }
   }
