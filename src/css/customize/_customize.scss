@@ -58,6 +58,18 @@
   &.card-bg_3 {
     background-image: url(../../img/home/home-card-bg-3.jpg);
   }
+  &.card-bg_4 {
+    background-image: url(../../img/project/project-list-9-bg.jpg);
+  }
+  &.card-bg_5 {
+    background-image: url(../../img/project/project-list-10-bg.jpg);
+  }
+  &.card-bg_6 {
+    background-image: url(../../img/project/project-list-11-bg.jpg);
+  }
+  &.card-bg_7 {
+    background-image: url(../../img/project/project-list-12-bg.jpg);
+  }
 }
 
 @keyframes criss-cross-left {
@@ -152,6 +164,33 @@
           animation: criss-cross-right 0.8s both;
           animation-direction: alternate;
         }
+      }
+    }
+  }
+}
+
+.inner-cate-btn {
+  .more-btn {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    background-color: $gray-900;
+    p {
+      color: white;
+    }
+    &:first-child,
+    &:nth-child(2) {
+      border-right: 1px solid white;
+    }
+    @include mq(lg) {
+      border-radius: 5px;
+      background-color: white;
+      p {
+        color: $gray-900;
+      }
+      &:first-child,
+      &:nth-child(2) {
+        border-right: 1px solid currentColor;
       }
     }
   }
