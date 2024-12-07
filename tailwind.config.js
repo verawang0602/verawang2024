@@ -144,6 +144,7 @@ module.exports = {
         1440: "90rem",
       },
       minWidth: {
+        150: "9.375rem",
         180: "11.25rem",
         220: "13.75rem",
       },
