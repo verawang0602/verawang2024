@@ -168,6 +168,13 @@
     }
   }
 }
+.btn-pro-box {
+  .more-btn {
+    @include mq(sm) {
+      max-width: inherit;
+    }
+  }
+}
 
 .inner-cate-btn {
   .more-btn {

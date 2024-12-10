@@ -32,7 +32,7 @@ module.exports = {
       "32px": "2rem",
       "36px": "2.25rem",
       "40px": "2.5rem",
-      "48px": "3rem",
+      "44px": "2.75rem",
       "68px": "4.25rem",
       "80px": "5rem",
     },
