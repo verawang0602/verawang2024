@@ -266,11 +266,6 @@
   left: 35/500 * 100%;
 }
 
-// .profile-contact {
-//   width: 395/500 * 100%;
-//   bottom: -205/580 * 100%;
-// }
-
 .profile-w {
   width: 395/500 * 100%;
   bottom: -205/580 * 100%;
@@ -296,6 +291,54 @@
           path {
             fill: $white;
           }
+        }
+      }
+    }
+  }
+}
+
+.scrollbar-wrapper2 {
+  position: relative;
+  overflow-x: auto;
+}
+
+.p-detail-table {
+  tbody {
+    tr {
+      &:first-child {
+        td {
+          color: $gray-900;
+          background-color: $gray-100;
+          border-bottom: none;
+          padding: 20px 10px;
+        }
+      }
+    }
+    td {
+      color: $gray-800;
+      padding: 20px 10px;
+      min-width: 300px;
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+      @include mq(md) {
+        padding: 32px 10px;
+      }
+      &:first-child {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+        min-width: 220px;
+      }
+      &:first-child {
+        padding: 20px 10px 20px 20px;
+        @include mq(md) {
+          padding: 32px 10px 32px 20px;
+        }
+      }
+      &:last-child {
+        padding: 20px 20px 20px 10px;
+        @include mq(md) {
+          padding: 32px 20px 32px 10px;
         }
       }
     }

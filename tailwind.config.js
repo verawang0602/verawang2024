@@ -66,6 +66,10 @@ module.exports = {
           800: "#555555",
           900: "#222222",
         },
+        "hi-lite": {
+          60: "#DCCBA8",
+          100: "#B79E6A",
+        },
       },
       boxShadow: {
         "3xl": "0 0 40px -15px rgba(0, 0, 0, 0.25)",
@@ -147,6 +151,7 @@ module.exports = {
         150: "9.375rem",
         180: "11.25rem",
         220: "13.75rem",
+        1200: "75rem",
       },
       maxHeight: {},
       minHeight: {},
