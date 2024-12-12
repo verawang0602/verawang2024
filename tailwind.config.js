@@ -11,6 +11,7 @@ module.exports = {
   },
   theme: {
     screens: {
+      xs: "450px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -67,6 +68,7 @@ module.exports = {
           900: "#222222",
         },
         "hi-lite": {
+          40: "#F1E7D4",
           60: "#DCCBA8",
           100: "#B79E6A",
         },
@@ -151,6 +153,7 @@ module.exports = {
         150: "9.375rem",
         180: "11.25rem",
         220: "13.75rem",
+        280: "17.5rem",
         1200: "75rem",
       },
       maxHeight: {},
