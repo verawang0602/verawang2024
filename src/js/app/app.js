@@ -57,6 +57,22 @@
     });
   };
 
+  const switchTab = () => {
+    function switchContent(index) {
+      $(".js-switch-content").hide();
+      $(".js-switch-content").eq(index).fadeIn();
+    }
+
+    $(".js-switch-tab").eq(0).addClass("is-active");
+    $(".js-switch-content").eq(0).show();
+    $(".js-switch-tab").on("click", function () {
+      var index = $(this).index();
+      switchContent(index);
+      $(this).addClass("is-active");
+      $(this).siblings().removeClass("is-active");
+    });
+  };
+
   const scrollHeader = () => {
     function checkWindowPosition() {
       const scrollTop = $(window).scrollTop();
@@ -86,6 +102,7 @@
     scrollWindow();
     goAnchor();
     goTop();
+    switchTab();
     scrollHeader();
   });
 })(jQuery);

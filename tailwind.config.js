@@ -146,7 +146,11 @@ module.exports = {
         full: "100%",
       },
       maxWidth: {
+        160: "10rem",
         200: "12.5rem",
+        380: "23.75rem",
+        500: "31.25rem",
+        800: "50rem",
         1440: "90rem",
       },
       minWidth: {
@@ -154,6 +158,7 @@ module.exports = {
         180: "11.25rem",
         220: "13.75rem",
         280: "17.5rem",
+        800: "50rem",
         1200: "75rem",
       },
       maxHeight: {},
