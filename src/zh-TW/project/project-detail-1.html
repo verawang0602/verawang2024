@@ -10,6 +10,23 @@
   <body>
     <!-- @@include ../include/header.html -->
     <main>
+      <nav
+        id="projectSideAnchor"
+        class="site-anchor fixed left-0 top-1/2 -translate-y-1/2 z-5 transform"
+      >
+        <ul class="space-y-5 anchor-tab">
+          <li data-href="#section-1">
+            <a href="javascript:;" class="text-gray-900 duration-300"
+              >前期研究</a
+            >
+          </li>
+          <li data-href="#section-2">
+            <a href="javascript:;" class="text-gray-900 duration-300"
+              >定義產品</a
+            >
+          </li>
+        </ul>
+      </nav>
       <section>
         <div class="relative px-10 pt-25 pb-7 lg:pt-30 lg:pb-14">
           <div class="mx-auto max-w-1440">
@@ -36,7 +53,7 @@
           </div>
         </div>
       </section>
-      <section class="relative">
+      <section class="relative" id="anchorArea">
         <img
           class="w-full"
           src="../../img/project/project-1/project-banner-1.jpg"
@@ -75,8 +92,8 @@
           </div>
         </div>
       </section>
-      <section class="lg:pt-40 lg:pb-30 py-15 px-10">
-        <div class="mx-auto max-w-1440 lg:space-y-30 space-y-15">
+      <section class="lg:pt-40 lg:pb-30 py-15 px-10" id="section-1">
+        <div class="mx-auto max-w-1440 lg:space-y-25 space-y-15">
           <div class="flex flex-wrap">
             <div
               class="lg:w-1/3 w-full lg:space-y-15 space-y-8 lg:pr-15 lg:mb-0 mb-6"
@@ -387,7 +404,7 @@
           </div>
         </div>
       </section>
-      <section class="lg:py-30 py-15 bg-hi-lite-40_50 px-10">
+      <section class="lg:py-25 py-15 bg-hi-lite-40_50 px-10">
         <div class="mx-auto max-w-1440">
           <h3
             class="lg:text-32px text-24px text-gray-900 font-medium lg:mb-5 mb-3"
@@ -523,8 +540,8 @@
           </div>
         </div>
       </section>
-      <section class="lg:py-25 py-15 px-10">
-        <div class="mx-auto max-w-1440 lg:space-y-30 space-y-15">
+      <section class="lg:py-25 py-15 px-10" id="section-2">
+        <div class="mx-auto max-w-1440 lg:space-y-25 space-y-15">
           <div>
             <h3
               class="lg:text-32px text-24px text-gray-900 font-medium lg:mb-7 mb-5"
@@ -1292,15 +1309,15 @@
                 <video
                   class="w-full block rounded-lg border-hi-lite-60 border"
                   src="../../img/project/project-1/design-video-5.mp4"
-                  autoplay
                   mute
                   loop
+                  controls
                   playsinline
                 ></video>
                 <video
                   class="w-full block rounded-lg border-hi-lite-60 border"
                   src="../../img/project/project-1/design-video-6.mp4"
-                  autoplay
+                  controls
                   mute
                   loop
                   playsinline
@@ -1351,7 +1368,9 @@
               </p>
             </div>
           </div>
-          <div class="flex lg:flex-row flex-col lg:gap-12 gap-4 items-center">
+          <div
+            class="flex lg:flex-row flex-col lg:gap-12 gap-4 items-center lg:mb-20 mb-10"
+          >
             <div class="lg:w-1/3 w-full">
               <h3
                 class="lg:text-32px md:text-24px text-20px text-gray-900 font-medium lg:mb-8 mb-4"
@@ -1411,6 +1430,63 @@
               src="../../img/project/project-1/design-iterate-2.jpg"
               alt=""
             />
+          </div>
+          <div
+            class="bg-white border-hi-lite-60 border lg:p-10 p-6 rounded-xl lg:mb-15 mb-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 items-center"
+          >
+            <img
+              class="w-full"
+              src="../../img/project/project-1/design-iterate-3.png"
+              alt=""
+            />
+            <img
+              class="w-full"
+              src="../../img/project/project-1/design-iterate-4.png"
+              alt=""
+            />
+            <img
+              class="w-full"
+              src="../../img/project/project-1/design-iterate-5.png"
+              alt=""
+            />
+          </div>
+          <div class="flex justify-center lg:gap-7 gap-4 btn-pro-box">
+            <a
+              href="https://www.hi-lite.com.tw/tw"
+              target="_blank"
+              class="md:w-45 w-full inline-block btn-project"
+              ><div class="more-btn"><p>網站連結</p></div>
+            </a>
+            <a
+              href="javascript:;"
+              target="_blank"
+              class="md:w-45 w-full inline-block btn-project"
+              ><div class="more-btn"><p>改版原型</p></div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="lg:py-20 py-15 px-10">
+        <div class="mx-auto max-w-1440">
+          <h3
+            class="lg:text-32px text-24px text-gray-900 font-medium lg:mb-5 mb-4"
+          >
+            過程與收穫
+          </h3>
+          <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="lg:pr-15 border-gray-300 lg:border-r lg:mb-0 mb-10">
+              <p class="lg:text-18px text-hi-lite-100 mb-3">執行的心路歷程</p>
+              <p class="text-gray-900">
+                首次實戰中，我們將完整的UX方法引入公司專案，但面臨客戶預算不足和公司既有時程無法調配等挑戰，導致上線版本未能如預期達成目標，讓人感到可惜。然而，內部人員達成共識，私下進行學習，並繼續推進其他目標。由於旅行主題容易找到受測者，我們順利執行了易用性測試，透過用戶的反饋發現設計盲點。隨後，與組員共同進行腦力激盪，找出解決方案。親自體驗迭代過程，使我們能夠不斷完善網站，這次深入的UX研究經驗讓我收穫良多。
+              </p>
+            </div>
+            <div class="lg:pl-15">
+              <p class="lg:text-18px text-hi-lite-100 mb-3">訂定未來藍圖</p>
+              <p class="text-gray-900">
+                AI智能技術的引用是未來重點發展的目標，如何透過智能技術減少更多人力成本，並且帶給用戶更多友善的體驗，像是開發智慧導遊量身打造專屬旅客的行程，打破跟團旅遊的刻板印象，讓旅客不需要辛苦做功課，也能享有自由行的好處。<br />
+                優化行動商務的作業流程與導入AI進行準確、優質服務體驗，將是打開旅遊業復甦的利器。
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -26,7 +26,23 @@
     function checkWindowPosition() {
       const scrollTop = $(window).scrollTop();
       if (scrollTop > 0) {
+        $(".go-top-btn").removeClass("opacity-0 invisible");
+        $(".go-top-btn").addClass("opacity-100 visible");
       } else {
+        $(".go-top-btn").removeClass("opacity-100 visible");
+        $(".go-top-btn").addClass("opacity-0 invisible");
+      }
+
+      if ($("#anchorArea").length) {
+        const anchorAreaPosition = $("#anchorArea").offset().top;
+        if (
+          scrollTop > anchorAreaPosition &&
+          scrollTop + window.innerHeight < $("#siteFooter").offset().top
+        ) {
+          $("#projectSideAnchor").addClass("is-scroll");
+        } else {
+          $("#projectSideAnchor").removeClass("is-scroll");
+        }
       }
     }
     checkWindowPosition();
@@ -96,6 +112,50 @@
     $(window).on("scroll", checkWindowPosition);
   };
 
+  const scrollAnchor = () => {
+    function checkAnchorPosition() {
+      const scrollTop = $(window).scrollTop();
+      $("[data-href]").each(function () {
+        const target = $(this).data("href");
+        const targetPosition = $(target).offset().top;
+        const targetHeight = $(target).outerHeight();
+        const siteAnchorHeight = $(".site-anchor").outerHeight();
+        if (
+          targetPosition - 1 <= scrollTop + 90 + siteAnchorHeight &&
+          targetPosition - 1 + targetHeight > scrollTop + 90 + siteAnchorHeight
+        ) {
+          $(this).addClass("is-active");
+        } else {
+          $(this).removeClass("is-active");
+        }
+      });
+    }
+    checkAnchorPosition();
+    $(window).on("scroll", checkAnchorPosition);
+  };
+
+  // const syncMobileAnchor = () => {
+  //   function checkAnchorPosition() {
+  //     const scrollTop = $(window).scrollTop();
+  //     $("#sectionMobileAnchor [data-anchor]").each(function () {
+  //       const target = $(this).data("anchor");
+  //       const targetPosition = $(target).offset().top;
+  //       const targetHeight = $(target).outerHeight();
+  //       const targetTitle = $(target).data("anchor-title");
+  //       if (
+  //         targetPosition - 65 <= scrollTop &&
+  //         targetPosition + targetHeight > scrollTop
+  //       ) {
+  //         $("[data-toggle-slide='#sectionAnchor']")
+  //           .find("h3")
+  //           .text(targetTitle);
+  //       }
+  //     });
+  //   }
+  //   checkAnchorPosition();
+  //   $(window).on("scroll", checkAnchorPosition);
+  // };
+
   $(() => {
     initSwiper();
     initAnimation();
@@ -104,5 +164,6 @@
     goTop();
     switchTab();
     scrollHeader();
+    scrollAnchor();
   });
 })(jQuery);

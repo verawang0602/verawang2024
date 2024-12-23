@@ -347,12 +347,11 @@
 
 ::-webkit-scrollbar {
   width: 6px;
-  height: 8px;
   background-color: $gray-100;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $hi-lite-100;
+  background-color: $gray-900;
 }
 
 ::-webkit-scrollbar-track {
@@ -369,6 +368,35 @@
     &.is-active {
       background-color: $hi-lite-100;
       color: $white;
+    }
+  }
+  &.button-iLeader {
+    li {
+      color: $iLeader-100;
+      border: 1px solid $iLeader-100;
+      &:hover,
+      &.is-active {
+        background-color: $iLeader-100;
+        color: $white;
+      }
+    }
+  }
+}
+.site-anchor {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  &.is-scroll {
+    opacity: 1;
+  }
+}
+.anchor-tab {
+  li {
+    &:hover,
+    &.is-active {
+      a {
+        font-weight: 800;
+        color: $hi-lite-100;
+      }
     }
   }
 }

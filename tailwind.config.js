@@ -72,6 +72,14 @@ module.exports = {
           60: "#DCCBA8",
           100: "#B79E6A",
         },
+        iLeader: {
+          10: "#FFF8F1",
+          20: "#FDF3E8",
+          30: "#FEDFB1",
+          40: "#F8D104",
+          50: "#FFB973",
+          100: "#EB7541",
+        },
       },
       boxShadow: {
         "3xl": "0 0 40px -15px rgba(0, 0, 0, 0.25)",
@@ -147,6 +155,7 @@ module.exports = {
       },
       maxWidth: {
         160: "10rem",
+        280: "17.5rem",
         200: "12.5rem",
         380: "23.75rem",
         500: "31.25rem",
