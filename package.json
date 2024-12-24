@@ -39,6 +39,7 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.4.1",
     "lodash": "^4.17.4",
+    "magnific-popup": "^1.2.0",
     "main-bower-files": "^2.13.1",
     "minimist": "^1.2.0",
     "photoswipe": "^4.1.3",

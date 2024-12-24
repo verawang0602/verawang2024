@@ -77,6 +77,7 @@ gulp.task("vendorJs", function () {
       "./node_modules/photoswipe/dist/photoswipe-ui-default.js",
       "./node_modules/gsap/dist/gsap.js",
       "./node_modules/gsap/dist/ScrollTrigger.js",
+      "./node_modules/magnific-popup/dist/jquery.magnific-popup.js",
     ])
     .pipe($.order(["jquery.js"]))
     .pipe($.concat("vendor.js"))

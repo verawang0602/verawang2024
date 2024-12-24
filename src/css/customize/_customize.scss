@@ -400,3 +400,23 @@
     }
   }
 }
+
+.zoom-animate {
+  .img-zoom {
+    bottom: -300px;
+    background-color: rgba($color: $black, $alpha: 0.3);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  @include mq(lg) {
+    &:hover {
+      .img-zoom {
+        bottom: 0;
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}

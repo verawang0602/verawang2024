@@ -57,7 +57,7 @@ module.exports = {
         danger: "#ff4444",
         bg_gray: "#fdfdfd",
         gray: {
-          100: "#eeeeee",
+          100: "#F8F8F8",
           200: "#dddddd",
           300: "#cccccc",
           400: "#bbbbbb",
