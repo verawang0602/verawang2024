@@ -5,12 +5,36 @@
   );
 
   const initSwiper = () => {
-    new Swiper(".hero .swiper", {
+    new Swiper(".library-card .swiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
       speed: 1000,
-      loop: $(".hero .swiper-slide").length > 1,
+      loop: $(".library-card .swiper-slide").length > 1,
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,
+      },
+
+      navigation: {
+        nextEl: ".library-card .swiper-button-next",
+        prevEl: ".library-card .swiper-button-prev",
+        clickable: true,
+      },
+    });
+    new Swiper(".library-card-2 .swiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed: 1000,
+      loop: $(".library-card-2 .swiper-slide").length > 1,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+
+      navigation: {
+        nextEl: ".library-card-2 .swiper-button-next",
+        prevEl: ".library-card-2 .swiper-button-prev",
+        clickable: true,
       },
     });
   };

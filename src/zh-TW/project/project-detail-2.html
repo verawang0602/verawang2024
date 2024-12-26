@@ -1315,23 +1315,548 @@
                       />
                     </div>
                   </div>
-                  <div class="grid lg:grid-cols-2 grid-cols-1">
-                    <div>
-                      <img
-                        class="lg:block hidden"
-                        src="../../img/project/project-2/design-library_de-1_pc.png"
-                        alt=""
-                      />
-                      <img
-                        class="lg:hidden w-full"
-                        src="../../img/project/project-2/design-library_de-1_mb.png"
-                        alt=""
-                      />
-                    </div>
+                  <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-6">
+                    <img
+                      class="w-full"
+                      src="../../img/project/project-2/design-library_de-1.png"
+                      alt=""
+                    />
                     <img
                       src="../../img/project/project-2/design-library_de-2.png"
                       alt=""
                     />
+                  </div>
+                  <div
+                    class="lg:px-8 lg:py-10 p-8 bg-iLeader-10 border border-iLeader-50 rounded-xl flex flex-wrap items-center"
+                  >
+                    <div
+                      class="lg:pr-11 pr-0 flex-1 flex flex-wrap items-center lg:mb-0 mb-6"
+                    >
+                      <img
+                        class="lg:w-2/3 w-full lg:order-1 order-2"
+                        src="../../img/project/project-2/design-choice-1.png"
+                        alt=""
+                      />
+                      <div
+                        class="lg:order-2 order-1 flex-1 lg:pl-6 lg:mb-0 mb-6"
+                      >
+                        <h4
+                          class="lg:text-24px text-20px font-medium text-gray-900 lg:mb-4 mb-2"
+                        >
+                          開始借閱 選擇圖書證
+                        </h4>
+                        <p class="text-gray-800">
+                          考量程式邏輯取消使用內建下拉工具，改為新增選取頁面。該頁面不僅可以選擇圖書館，還能顯示書籍的基本資料。
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="lg:w-1/3 w-full"
+                      src="../../img/project/project-2/design-choice-2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="flex items-center lg:gap-4 gap-2 mb-2">
+                  <p
+                    class="lg:text-44px text-32px font-manrope text-iLeader-100"
+                  >
+                    03
+                  </p>
+                  <p class="lg:text-32px text-24px text-gray-900 font-medium">
+                    借閱證
+                  </p>
+                </div>
+                <div
+                  class="grid xl:grid-cols-2 grid-cols-1 lg:gap-10 gap-12 lg:px-8 lg:py-10 p-5 rounded-xl bg-iLeader-10"
+                >
+                  <div
+                    class="library-card flex md:flex-row flex-col-reverse gap-6 items-stretch"
+                  >
+                    <div class="xl:w-5/12 md:w-3/12 w-full">
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-old_1.png"
+                              class="w-full rounded-lg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-old_2.png"
+                              class="w-full rounded-lg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-old_3.jpeg"
+                              class="w-full rounded-lg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-old_4.png"
+                              class="w-full rounded-lg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-old_5.jpeg"
+                              class="w-full rounded-lg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="xl:w-7/12 md:w-9/12 w-full flex flex-wrap content-between"
+                    >
+                      <div class="w-full mb-6">
+                        <h4
+                          class="lg:text-24px text-18px font-medium text-gray-900 lg:mb-4 mb-2"
+                        >
+                          借閱證-改版前
+                        </h4>
+                        <p
+                          class="lg:text-20px text-18px text-iLeader-100 font-medium lg:mb-10 mb-5"
+                        >
+                          原規則操作不便，需切換館別才可以查閱其他家書籍的資料。
+                        </p>
+                        <ul class="lg:space-y-6 space-y-4 text-gray-800">
+                          <li class="flex items-start gap-2">
+                            <img
+                              class="w-2 mt-2"
+                              src="../../img/project/project-2/list-circle.svg"
+                              alt=""
+                            />
+                            <p class="flex-1">
+                              原登入流程需跳轉至國資圖網站進行登入註冊，中斷APP使用且操作不流暢。登入後，會員中心僅顯示「Logout」按鈕，浪費頁面空間。租借規則僅以文字顯示，無法與圖書館資料同步，用戶需自行計算剩餘借閱額度。
+                            </p>
+                          </li>
+                          <li class="flex items-start gap-2">
+                            <img
+                              class="w-2 mt-2"
+                              src="../../img/project/project-2/list-circle.svg"
+                              alt=""
+                            />
+                            <p class="flex-1">
+                              在借閱時發現已達上限，需要切換借閱證到其他圖書館重新查找。書籍的館藏沒有整合，當找不到書籍時，必須多次切換館別查詢，這樣不僅不方便，還非常耗時。
+                            </p>
+                          </li>
+                          <li class="flex items-start gap-2">
+                            <img
+                              class="w-2 mt-2"
+                              src="../../img/project/project-2/list-circle.svg"
+                              alt=""
+                            />
+                            <p class="flex-1">
+                              借閱證登入不統一，且當前選擇的館別提示也不清楚，UI設計老舊，不吸引用戶使用。
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="w-full flex gap-2">
+                        <div
+                          class="swiper-button-prev transition duration-300 flex justify-center items-center w-12 h-12 bg-white rounded-full border border-iLeader-100 hover:bg-iLeader-100"
+                        >
+                          <svg
+                            width="12"
+                            height="10"
+                            viewBox="0 0 12 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.146638 5.35374L4.64649 9.85359C4.74031 9.94741 4.86755 10.0001 5.00023 10.0001C5.13291 10.0001 5.26015 9.94741 5.35397 9.85359C5.44778 9.75977 5.50049 9.63253 5.50049 9.49985C5.50049 9.36718 5.44778 9.23993 5.35397 9.14611L1.70721 5.49998H11.5C11.6326 5.49998 11.7598 5.44731 11.8536 5.35354C11.9473 5.25978 12 5.1326 12 5C12 4.8674 11.9473 4.74022 11.8536 4.64646C11.7598 4.55269 11.6326 4.50002 11.5 4.50002H1.70721L5.35397 0.853886C5.44778 0.760068 5.50049 0.632825 5.50049 0.500147C5.50049 0.36747 5.44778 0.240226 5.35397 0.146409C5.26015 0.0525915 5.13291 -0.000114441 5.00023 -0.000114441C4.86755 -0.000114441 4.74031 0.0525915 4.64649 0.146409L0.146638 4.64626C0.100151 4.6927 0.0632725 4.74784 0.0381107 4.80854C0.0129499 4.86923 0 4.93429 0 5C0 5.06571 0.0129499 5.13077 0.0381107 5.19146C0.0632725 5.25216 0.100151 5.3073 0.146638 5.35374Z"
+                              fill="#EB7541"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="swiper-button-next transition duration-300 flex justify-center items-center w-12 h-12 bg-white rounded-full border border-iLeader-100 hover:bg-iLeader-100"
+                        >
+                          <svg
+                            width="12"
+                            height="10"
+                            viewBox="0 0 12 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.8534 5.35374L7.35351 9.85359C7.25969 9.94741 7.13245 10.0001 6.99977 10.0001C6.86709 10.0001 6.73985 9.94741 6.64603 9.85359C6.55222 9.75977 6.49951 9.63253 6.49951 9.49985C6.49951 9.36718 6.55222 9.23993 6.64603 9.14611L10.2928 5.49998H0.499984C0.36738 5.49998 0.240207 5.44731 0.146442 5.35354C0.0526768 5.25978 0 5.1326 0 5C0 4.8674 0.0526768 4.74022 0.146442 4.64646C0.240207 4.55269 0.36738 4.50002 0.499984 4.50002H10.2928L6.64603 0.853886C6.55222 0.760068 6.49951 0.632825 6.49951 0.500147C6.49951 0.36747 6.55222 0.240226 6.64603 0.146409C6.73985 0.0525915 6.86709 -0.000114441 6.99977 -0.000114441C7.13245 -0.000114441 7.25969 0.0525915 7.35351 0.146409L11.8534 4.64626C11.8998 4.6927 11.9367 4.74784 11.9619 4.80854C11.9871 4.86923 12 4.93429 12 5C12 5.06571 11.9871 5.13077 11.9619 5.19146C11.9367 5.25216 11.8998 5.3073 11.8534 5.35374Z"
+                              fill="#EB7541"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="library-card-2 flex md:flex-row flex-col-reverse gap-6 items-stretch"
+                  >
+                    <div class="xl:w-5/12 md:w-3/12 w-full">
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-new_1.jpg"
+                              class="w-full rounded-lg border-4 border-white"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-new_2.jpg"
+                              class="w-full rounded-lg border-4 border-white"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-new_3.jpg"
+                              class="w-full rounded-lg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-new_4.jpg"
+                              class="w-full rounded-lg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-new_5.jpg"
+                              class="w-full rounded-lg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-new_6.jpg"
+                              class="w-full rounded-lg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="swiper-slide overflow-hidden">
+                            <img
+                              src="../../img/project/project-2/card-new_7.jpg"
+                              class="w-full rounded-lg border-4 border-white"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="xl:w-7/12 md:w-9/12 flex flex-wrap content-between"
+                    >
+                      <div class="w-full mb-6">
+                        <h4
+                          class="lg:text-24px text-18px font-medium text-gray-900 lg:mb-4 mb-2"
+                        >
+                          借閱證-改版後
+                        </h4>
+                        <p
+                          class="lg:text-20px text-18px text-iLeader-100 font-medium lg:mb-10 mb-5"
+                        >
+                          整合全國圖書館館藏資料庫，不需反覆切換館別。
+                        </p>
+                        <ul class="lg:space-y-6 space-y-4 text-gray-800">
+                          <li class="flex items-start gap-2">
+                            <img
+                              class="w-2 mt-2"
+                              src="../../img/project/project-2/list-circle.svg"
+                              alt=""
+                            />
+                            <p class="flex-1">
+                              全國圖書館書籍館藏多，資料庫全部整合，減少找不到書籍的問題。
+                            </p>
+                          </li>
+                          <li class="flex items-start gap-2">
+                            <img
+                              class="w-2 mt-2"
+                              src="../../img/project/project-2/list-circle.svg"
+                              alt=""
+                            />
+                            <p class="flex-1">
+                              辦理國資圖APP帳戶後，用戶可將已有的借閱證添加到借閱證專區，統一管理所有借閱證，並更清楚地查閱各家圖書館的書籍庫存情況。
+                            </p>
+                          </li>
+                          <li class="flex items-start gap-2">
+                            <img
+                              class="w-2 mt-2"
+                              src="../../img/project/project-2/list-circle.svg"
+                              alt=""
+                            />
+                            <p class="flex-1">
+                              搜尋書籍後，系統將自動判斷用戶所登入的借閱證是否具備借閱資格。如果不符合資格，下方將顯示可借閱的館別及線上辦證連結，讓用戶能直接外連至網站辦理，這樣可以減少自行查找的時間，提高操作效率。
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="w-full flex gap-2">
+                        <div
+                          class="swiper-button-prev transition duration-300 flex justify-center items-center w-12 h-12 bg-white rounded-full border border-iLeader-100 hover:bg-iLeader-100"
+                        >
+                          <svg
+                            width="12"
+                            height="10"
+                            viewBox="0 0 12 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.146638 5.35374L4.64649 9.85359C4.74031 9.94741 4.86755 10.0001 5.00023 10.0001C5.13291 10.0001 5.26015 9.94741 5.35397 9.85359C5.44778 9.75977 5.50049 9.63253 5.50049 9.49985C5.50049 9.36718 5.44778 9.23993 5.35397 9.14611L1.70721 5.49998H11.5C11.6326 5.49998 11.7598 5.44731 11.8536 5.35354C11.9473 5.25978 12 5.1326 12 5C12 4.8674 11.9473 4.74022 11.8536 4.64646C11.7598 4.55269 11.6326 4.50002 11.5 4.50002H1.70721L5.35397 0.853886C5.44778 0.760068 5.50049 0.632825 5.50049 0.500147C5.50049 0.36747 5.44778 0.240226 5.35397 0.146409C5.26015 0.0525915 5.13291 -0.000114441 5.00023 -0.000114441C4.86755 -0.000114441 4.74031 0.0525915 4.64649 0.146409L0.146638 4.64626C0.100151 4.6927 0.0632725 4.74784 0.0381107 4.80854C0.0129499 4.86923 0 4.93429 0 5C0 5.06571 0.0129499 5.13077 0.0381107 5.19146C0.0632725 5.25216 0.100151 5.3073 0.146638 5.35374Z"
+                              fill="#EB7541"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="swiper-button-next transition duration-300 flex justify-center items-center w-12 h-12 bg-white rounded-full border border-iLeader-100 hover:bg-iLeader-100"
+                        >
+                          <svg
+                            width="12"
+                            height="10"
+                            viewBox="0 0 12 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.8534 5.35374L7.35351 9.85359C7.25969 9.94741 7.13245 10.0001 6.99977 10.0001C6.86709 10.0001 6.73985 9.94741 6.64603 9.85359C6.55222 9.75977 6.49951 9.63253 6.49951 9.49985C6.49951 9.36718 6.55222 9.23993 6.64603 9.14611L10.2928 5.49998H0.499984C0.36738 5.49998 0.240207 5.44731 0.146442 5.35354C0.0526768 5.25978 0 5.1326 0 5C0 4.8674 0.0526768 4.74022 0.146442 4.64646C0.240207 4.55269 0.36738 4.50002 0.499984 4.50002H10.2928L6.64603 0.853886C6.55222 0.760068 6.49951 0.632825 6.49951 0.500147C6.49951 0.36747 6.55222 0.240226 6.64603 0.146409C6.73985 0.0525915 6.86709 -0.000114441 6.99977 -0.000114441C7.13245 -0.000114441 7.25969 0.0525915 7.35351 0.146409L11.8534 4.64626C11.8998 4.6927 11.9367 4.74784 11.9619 4.80854C11.9871 4.86923 12 4.93429 12 5C12 5.06571 11.9871 5.13077 11.9619 5.19146C11.9367 5.25216 11.8998 5.3073 11.8534 5.35374Z"
+                              fill="#EB7541"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="flex items-center lg:gap-4 gap-2 xl:mb-2 mb-4">
+                  <p
+                    class="lg:text-44px text-32px font-manrope text-iLeader-100"
+                  >
+                    04
+                  </p>
+                  <p class="lg:text-32px text-24px text-gray-900 font-medium">
+                    我的書櫃
+                  </p>
+                </div>
+                <div
+                  class="flex xl:flex-row flex-col-reverse items-center xl:gap-10 gap-5"
+                >
+                  <div
+                    class="xl:w-2/3 w-full grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-7"
+                  >
+                    <img
+                      src="../../img/project/project-2/bookcase-1.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <img
+                      src="../../img/project/project-2/bookcase-2.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <img
+                      src="../../img/project/project-2/bookcase-3.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <img
+                      src="../../img/project/project-2/bookcase-4.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <img
+                      src="../../img/project/project-2/bookcase-5.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                  </div>
+                  <div class="xl:w-1/3 w-full">
+                    <ul class="space-y-4 lg:leading-8 leading-6 lg:mb-0 mb-5">
+                      <li class="text-gray-900 flex gap-2">
+                        <span
+                          class="lg:w-6 lg:h-6 w-5 h-5 bg-gray-900 lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
+                          >1</span
+                        >
+                        <span class="flex-1">
+                          將借閱、預約、收藏三大重點放置最上方，重點功能立即可見！
+                        </span>
+                      </li>
+                      <li class="text-gray-900 flex flex-wrap gap-2">
+                        <span
+                          class="lg:w-6 lg:h-6 w-5 h-5 bg-gray-900 lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
+                          >2</span
+                        >
+                        <span class="flex-1">
+                          歸納借閱紀錄，書櫃首頁擺放近期不分館別借過的書籍。
+                        </span>
+                      </li>
+                      <li class="text-gray-900 flex flex-wrap gap-2">
+                        <span
+                          class="lg:w-6 lg:h-6 w-5 h-5 bg-gray-900 lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
+                          >3</span
+                        >
+                        <span class="flex-1">
+                          書籍列表會依照館別分類，提供館別篩選避免資料過多時不易查找。(預約及歷史紀錄都是相同規則)
+                        </span>
+                      </li>
+                      <li class="text-gray-900 flex flex-wrap gap-2">
+                        <span
+                          class="lg:w-6 lg:h-6 w-5 h-5 bg-gray-900 lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
+                          >4</span
+                        >
+                        <span class="flex-1">
+                          用戶分享讀後感受，幫助其他讀者選擇適合的書籍。
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="flex items-center lg:gap-4 gap-2 mb-4">
+                  <p
+                    class="lg:text-44px text-32px font-manrope text-iLeader-100"
+                  >
+                    05
+                  </p>
+                  <p class="lg:text-32px text-24px text-gray-900 font-medium">
+                    線上閱讀器
+                  </p>
+                </div>
+                <div
+                  class="flex xl:flex-row flex-col lg:gap-15 gap-8 lg:p-10 p-5 rounded-xl bg-iLeader-10"
+                >
+                  <div
+                    class="xl:w-45% w-full flex md:flex-row flex-col-reverse gap-5"
+                  >
+                    <img
+                      src="../../img/project/project-2/online_reader-1.png"
+                      alt=""
+                      class="xl:w-1/2 md:w-1/3 w-full"
+                    />
+                    <div class="xl:w-1/2 md:w-2/3 w-full">
+                      <h4
+                        class="lg:text-24px text-20px font-manrope font-medium text-gray-900 lg:mb-3 mb-1"
+                      >
+                        功能介紹
+                      </h4>
+                      <ul class="space-y-4 lg:leading-8 leading-6 mb-5">
+                        <li class="text-gray-900 flex gap-2">
+                          <span
+                            class="lg:w-6 lg:h-6 w-5 h-5 bg-gray-900 lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
+                            >1</span
+                          >
+                          <span class="flex-1"> 章節總覽頁 </span>
+                        </li>
+                        <li class="text-gray-900 flex flex-wrap gap-2">
+                          <span
+                            class="lg:w-6 lg:h-6 w-5 h-5 bg-gray-900 lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
+                            >2</span
+                          >
+                          <span class="flex-1">
+                            閱讀紀錄：目錄、書籤、筆記
+                          </span>
+                        </li>
+                        <li class="text-gray-900 flex flex-wrap gap-2">
+                          <span
+                            class="lg:w-6 lg:h-6 w-5 h-5 bg-gray-900 lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
+                            >3</span
+                          >
+                          <span class="flex-1">
+                            設定：文字大小、文字行距、螢幕亮度、螢幕模式、閱讀模式、翻頁區域
+                          </span>
+                        </li>
+                        <li class="text-gray-900 flex flex-wrap gap-2">
+                          <span
+                            class="lg:w-6 lg:h-6 w-5 h-5 bg-gray-900 lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
+                            >4</span
+                          >
+                          <span class="flex-1">
+                            有聲書控制器：可調整語速、切換章節等功能
+                          </span>
+                        </li>
+                        <li class="text-gray-900 flex flex-wrap gap-2">
+                          <span
+                            class="lg:w-6 lg:h-6 w-5 h-5 bg-gray-900 lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
+                            >5</span
+                          >
+                          <span class="flex-1">
+                            其他功能：書籍資訊、使用教學、心得評論
+                          </span>
+                        </li>
+                      </ul>
+                      <img
+                        src="../../img/project/project-2/online_reader-2.png"
+                        class="w-full border-2 border-white rounded-lg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="xl:w-55% w-full">
+                    <h4
+                      class="lg:text-24px text-20px font-manrope font-medium text-gray-900 lg:mb-3 mb-1"
+                    >
+                      使用教學說明設計
+                    </h4>
+                    <div
+                      class="grid lg:grid-cols-5 sm:grid-cols-4 grid-cols-2 gap-5"
+                    >
+                      <img
+                        src="../../img/project/project-2/online_reader-3.png"
+                        alt=""
+                      />
+                      <img
+                        src="../../img/project/project-2/online_reader-4.png"
+                        alt=""
+                      />
+                      <img
+                        src="../../img/project/project-2/online_reader-5.png"
+                        alt=""
+                      />
+                      <img
+                        src="../../img/project/project-2/online_reader-6.png"
+                        alt=""
+                      />
+                      <img
+                        src="../../img/project/project-2/online_reader-7.png"
+                        alt=""
+                      />
+                      <img
+                        src="../../img/project/project-2/online_reader-8.png"
+                        alt=""
+                      />
+                      <img
+                        src="../../img/project/project-2/online_reader-9.png"
+                        alt=""
+                      />
+                      <img
+                        src="../../img/project/project-2/online_reader-10.png"
+                        alt=""
+                      />
+                      <img
+                        src="../../img/project/project-2/online_reader-11.png"
+                        alt=""
+                      />
+                      <img
+                        src="../../img/project/project-2/online_reader-12.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1340,280 +1865,6 @@
         </div>
       </section>
 
-      <section class="lg:py-25 py-15 px-10">
-        <div class="mx-auto max-w-1440">
-          <div class="lg:space-y-20 space-y-10">
-            <div
-              class="bg-gray-100 border-hi-lite-60 border lg:p-15 p-6 rounded-xl lg:mb-15 mb-8"
-            >
-              <div
-                class="flex lg:flex-row flex-col-reverse lg:gap-10 gap-5 items-center"
-              >
-                <div
-                  class="lg:w-2/3 w-full grid sm:grid-cols-3 grid-cols-2 lg:gap-8 gap-5"
-                >
-                  <img
-                    class="border-4 border-white rounded-lg"
-                    src="../../img/project/project-1/design-schedule_mb-1.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="border-4 border-white rounded-lg"
-                    src="../../img/project/project-1/design-schedule_mb-2.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="border-4 border-white rounded-lg"
-                    src="../../img/project/project-1/design-schedule_mb-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="lg:w-1/3 w-full">
-                  <h3
-                    class="lg:text-32px text-24px text-gray-900 font-medium mb-4"
-                  >
-                    內頁行動裝置
-                  </h3>
-                  <p class="text-gray-700 leading-6">
-                    當頁籤切換為下拉方式時，欄位文字會根據所點擊的標題變更為對應的名稱，讓使用者清楚了解目前所在的區塊。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="flex items-center lg:gap-4 gap-2 mb-2">
-                <p class="lg:text-44px text-32px font-manrope text-hi-lite-60">
-                  03
-                </p>
-                <p class="lg:text-32px text-24px text-gray-900 font-medium">
-                  購物車
-                </p>
-              </div>
-              <p class="text-gray-800 lg:mb-10 mb-5">
-                簡化下單流程，將所有填寫欄位集中於第一步驟。右側釘選重要資訊，方便用戶隨時下訂。考慮到用戶反饋，新增常用旅客功能，讓會員在購物車下單時可快速帶入顧客資訊，加速訂購流程。根據易用性測試反饋，優化資料確認步驟，支持即時修正旅客資訊，考量程式撰寫規則，採用跳框編輯方式。
-              </p>
-              <div class="mb-10">
-                <p class="lg:text-24px text-20px text-hi-lite-100 lg:mb-6 mb-3">
-                  第一步驟
-                </p>
-                <video
-                  class="w-full block rounded-lg"
-                  src="../../img/project/project-1/design-video-3.mp4"
-                  mute
-                  autoplay
-                  loop
-                  playsinline
-                ></video>
-              </div>
-              <div>
-                <p class="lg:text-24px text-20px text-hi-lite-100 lg:mb-6 mb-3">
-                  第二步驟
-                </p>
-                <video
-                  class="w-full block rounded-lg"
-                  src="../../img/project/project-1/design-video-4.mp4"
-                  mute
-                  autoplay
-                  loop
-                  playsinline
-                ></video>
-              </div>
-            </div>
-            <div>
-              <div class="flex items-center lg:gap-4 gap-2 mb-2">
-                <p class="lg:text-44px text-32px font-manrope text-hi-lite-60">
-                  04
-                </p>
-                <p class="lg:text-32px text-24px text-gray-900 font-medium">
-                  比較清單
-                </p>
-              </div>
-              <p class="text-gray-800 lg:mb-10 mb-5">
-                將行程團資訊整合成清晰的表格，方便用戶快速查閱。用戶還可以直接將感興趣的行程加入收藏清單進行比較，並利用顏色分隔內容，有效區分各項資訊，提升整體易讀性。
-              </p>
-              <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-5">
-                <img
-                  class="rounded-xl"
-                  src="../../img/project/project-1/design-compare-1.jpg"
-                  alt=""
-                />
-                <img
-                  class="rounded-xl"
-                  src="../../img/project/project-1/design-compare-2.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div>
-              <div class="flex items-center lg:gap-4 gap-2 mb-2">
-                <p class="lg:text-44px text-32px font-manrope text-hi-lite-60">
-                  05
-                </p>
-                <p class="lg:text-32px text-24px text-gray-900 font-medium">
-                  會員中心
-                </p>
-              </div>
-              <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-5">
-                <video
-                  class="w-full block rounded-lg border-hi-lite-60 border"
-                  src="../../img/project/project-1/design-video-5.mp4"
-                  mute
-                  loop
-                  controls
-                  playsinline
-                ></video>
-                <video
-                  class="w-full block rounded-lg border-hi-lite-60 border"
-                  src="../../img/project/project-1/design-video-6.mp4"
-                  controls
-                  mute
-                  loop
-                  playsinline
-                ></video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="lg:py-25 py-15 bg-hi-lite-40_50 px-10">
-        <div class="mx-auto max-w-1440">
-          <div
-            class="bg-white rounded-xl p-5 flex md:items-center items-start gap-5 lg:mb-10 mb-6"
-          >
-            <img
-              class="md:w-auto w-7"
-              src="../../img/project/project-2/icon-light.svg"
-              alt=""
-            />
-            <p class="lg:text-20px text-18px text-gray-900 font-medium">
-              根據實測原型的用戶反饋，將增加個人化功能，系統將分析用戶的歷史行為和喜好，自動調整顯示內容，確保用戶能夠輕鬆找到他們感興趣的行程，並且享受到獨特而個性化的旅遊體驗。
-            </p>
-          </div>
-          <div
-            class="flex flex-wrap justify-between items-end gap-1 lg:pb-8 pb-5 border-b border-gray-600 lg:mb-12 mb-5"
-          >
-            <h3 class="lg:text-32px text-24px text-gray-900 font-medium">
-              迭代調整
-            </h3>
-            <p class="text-gray-800">因考量版面長度問題，挑重點項目說明！</p>
-          </div>
-          <div
-            class="flex lg:flex-row flex-col-reverse lg:gap-12 gap-4 items-center lg:mb-20 mb-10"
-          >
-            <img
-              class="lg:w-2/3 w-full rounded-xl border-hi-lite-60 border"
-              src="../../img/project/project-1/design-iterate-1.jpg"
-              alt=""
-            />
-            <div class="lg:w-1/3 w-full">
-              <h3
-                class="lg:text-32px md:text-24px text-20px text-gray-900 font-medium lg:mb-4 mb-2"
-              >
-                新增喜好詢問機制
-              </h3>
-              <p class="text-gray-700 leading-6">
-                快速了解用戶需求，並透過AI智能篩選打造專屬的個人化搜尋結果。
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex lg:flex-row flex-col lg:gap-12 gap-4 items-center lg:mb-20 mb-10"
-          >
-            <div class="lg:w-1/3 w-full">
-              <h3
-                class="lg:text-32px md:text-24px text-20px text-gray-900 font-medium lg:mb-8 mb-4"
-              >
-                比較清單 優化操作介面
-              </h3>
-              <ul
-                class="lg:space-y-8 space-y-5 lg:text-20px text-18px lg:leading-8 leading-6 lg:mb-0 mb-5"
-              >
-                <li class="text-gray-900 flex gap-2">
-                  <span
-                    class="lg:w-6 lg:h-6 w-5 h-5 bg-primary lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
-                    >1</span
-                  >
-                  <span class="flex-1">
-                    標題獨立於右側，不與內容資訊混淆。
-                  </span>
-                </li>
-                <li class="text-gray-900 flex flex-wrap gap-2">
-                  <span
-                    class="lg:w-6 lg:h-6 w-5 h-5 bg-primary lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
-                    >2</span
-                  >
-                  <span class="flex-1">
-                    依照喜愛詢問調查，規劃出行程推薦度。
-                  </span>
-                </li>
-                <li class="text-gray-900 flex flex-wrap gap-2">
-                  <span
-                    class="lg:w-6 lg:h-6 w-5 h-5 bg-primary lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
-                    >3</span
-                  >
-                  <span class="flex-1">
-                    新增左右切換鈕可進行多個行程比較，也能避免遺漏資訊。
-                  </span>
-                </li>
-                <li class="text-gray-900 flex flex-wrap gap-2">
-                  <span
-                    class="lg:w-6 lg:h-6 w-5 h-5 bg-primary lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
-                    >4</span
-                  >
-                  <span class="flex-1"> 繪製直向分隔線將資訊劃分更為清楚 </span>
-                </li>
-                <li class="text-gray-900 flex flex-wrap gap-2">
-                  <span
-                    class="lg:w-6 lg:h-6 w-5 h-5 bg-primary lg:text-16px text-14px text-white font-semibold font-manrope rounded-full mt-1 flex justify-center items-center"
-                    >5</span
-                  >
-                  <span class="flex-1">
-                    每日行程類別切換置中，與其他標題區分樣式與位置。
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <img
-              class="lg:w-2/3 w-full rounded-xl border-hi-lite-60 border"
-              src="../../img/project/project-1/design-iterate-2.jpg"
-              alt=""
-            />
-          </div>
-          <div
-            class="bg-white border-hi-lite-60 border lg:p-10 p-6 rounded-xl lg:mb-15 mb-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 items-center"
-          >
-            <img
-              class="w-full"
-              src="../../img/project/project-1/design-iterate-3.png"
-              alt=""
-            />
-            <img
-              class="w-full"
-              src="../../img/project/project-1/design-iterate-4.png"
-              alt=""
-            />
-            <img
-              class="w-full"
-              src="../../img/project/project-1/design-iterate-5.png"
-              alt=""
-            />
-          </div>
-          <div class="flex justify-center lg:gap-7 gap-4 btn-pro-box">
-            <a
-              href="https://www.hi-lite.com.tw/tw"
-              target="_blank"
-              class="md:w-45 w-full inline-block btn-project"
-              ><div class="more-btn"><p>網站連結</p></div>
-            </a>
-            <a
-              href="javascript:;"
-              target="_blank"
-              class="md:w-45 w-full inline-block btn-project"
-              ><div class="more-btn"><p>改版原型</p></div>
-            </a>
-          </div>
-        </div>
-      </section>
       <section class="lg:py-20 py-15 px-10">
         <div class="mx-auto max-w-1440">
           <h3
