@@ -74,15 +74,25 @@
   };
 
   const goAnchor = () => {
-    $("[data-href]").on("click", function () {
-      const target = $(this).data("href");
+    $("[data-anchor]").on("click", function () {
+      const target = $(this).data("anchor");
       const targetPosition = $(target).offset().top;
+      $("#sectionAnchor").slideUp();
+      $(".select-arrow").removeClass("rotate-180");
       $("html,body").stop().animate(
         {
           scrollTop: targetPosition,
         },
         800
       );
+    });
+  };
+
+  const toggleSlide = () => {
+    $("[data-toggle-slide]").on("click", function () {
+      const target = $(this).data("toggle-slide");
+      $(".select-arrow").toggleClass("rotate-180");
+      $(target).slideToggle();
     });
   };
 
@@ -113,12 +123,26 @@
     });
   };
 
+  const openMenu = () => {
+    $(".wrapper-menu").on("click", function () {
+      $("body").toggleClass("overflow-hidden");
+      $(".menu-block").toggleClass("show");
+    });
+    $(".menu-mask").on("click", function () {
+      $("body").removeClass("overflow-hidden");
+      $(".menu-block").removeClass("show");
+      $(".wrapper-menu").removeClass("open");
+    });
+  };
+
   const scrollHeader = () => {
     function checkWindowPosition() {
       const scrollTop = $(window).scrollTop();
       if (scrollTop > 0) {
         $(".site-header__bg").removeClass("h-0");
         $(".site-header__bg").addClass("h-full");
+        $(".wrapper-menu").removeClass("lg:top-7");
+        $(".wrapper-menu").addClass("lg:top-5");
         $(".site-header__main").removeClass("lg:h-20");
         $(".site-header__main").addClass("lg:h-16");
         $(".go-top").removeClass("opacity-0 invisible");
@@ -126,6 +150,8 @@
       } else {
         $(".site-header__bg").removeClass("h-full");
         $(".site-header__bg").addClass("h-0");
+        $(".wrapper-menu").removeClass("lg:top-5");
+        $(".wrapper-menu").addClass("lg:top-7");
         $(".site-header__main").removeClass("lg:h-16");
         $(".site-header__main").addClass("lg:h-20");
         $(".go-top").removeClass("opacity-100 visible");
@@ -136,11 +162,33 @@
     $(window).on("scroll", checkWindowPosition);
   };
 
+  const syncMobileAnchor = () => {
+    function checkAnchorPosition() {
+      const scrollTop = $(window).scrollTop();
+      $("#sectionMobileAnchor [data-anchor]").each(function () {
+        const target = $(this).data("anchor");
+        const targetPosition = $(target).offset().top;
+        const targetHeight = $(target).outerHeight();
+        const targetTitle = $(target).data("anchor-title");
+        if (
+          targetPosition - 65 <= scrollTop &&
+          targetPosition + targetHeight > scrollTop
+        ) {
+          $("[data-toggle-slide='#sectionAnchor']")
+            .find("h3")
+            .text(targetTitle);
+        }
+      });
+    }
+    checkAnchorPosition();
+    $(window).on("scroll", checkAnchorPosition);
+  };
+
   const scrollAnchor = () => {
     function checkAnchorPosition() {
       const scrollTop = $(window).scrollTop();
-      $("[data-href]").each(function () {
-        const target = $(this).data("href");
+      $("[data-anchor]").each(function () {
+        const target = $(this).data("anchor");
         const targetPosition = $(target).offset().top;
         const targetHeight = $(target).outerHeight();
         const siteAnchorHeight = $(".site-anchor").outerHeight();
@@ -157,28 +205,6 @@
     checkAnchorPosition();
     $(window).on("scroll", checkAnchorPosition);
   };
-
-  // const syncMobileAnchor = () => {
-  //   function checkAnchorPosition() {
-  //     const scrollTop = $(window).scrollTop();
-  //     $("#sectionMobileAnchor [data-anchor]").each(function () {
-  //       const target = $(this).data("anchor");
-  //       const targetPosition = $(target).offset().top;
-  //       const targetHeight = $(target).outerHeight();
-  //       const targetTitle = $(target).data("anchor-title");
-  //       if (
-  //         targetPosition - 65 <= scrollTop &&
-  //         targetPosition + targetHeight > scrollTop
-  //       ) {
-  //         $("[data-toggle-slide='#sectionAnchor']")
-  //           .find("h3")
-  //           .text(targetTitle);
-  //       }
-  //     });
-  //   }
-  //   checkAnchorPosition();
-  //   $(window).on("scroll", checkAnchorPosition);
-  // };
 
   const magnificPopup = () => {
     $(".zoom-gallery").each(function () {
@@ -216,9 +242,12 @@
     scrollWindow();
     goAnchor();
     goTop();
+    toggleSlide();
     switchTab();
     scrollHeader();
+    syncMobileAnchor();
     scrollAnchor();
     magnificPopup();
+    openMenu();
   });
 })(jQuery);

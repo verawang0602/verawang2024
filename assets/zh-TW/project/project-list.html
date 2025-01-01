@@ -9,20 +9,85 @@
   </head>
   <body>
 <!-- start header.html-->
-<header class="site-header fixed top-0 left-0 w-full z-40">
+<header id="siteHeader" class="site-header fixed top-0 left-0 w-full z-40">
   <div
     class="site-header__bg absolute top-0 left-0 w-full transition-height duration-500 h-0"
   ></div>
+  <div class="wrapper-menu absolute lg:top-5 top-4 lg:right-15 right-10 z-100">
+    <div class="line-menu half start"></div>
+    <div class="line-menu"></div>
+    <div class="line-menu half end"></div>
+  </div>
   <div
-    class="site-header__main relative flex justify-between items-center h-20 px-7.5 transition-height duration-500 xl:px-15 lg:h-20"
+    class="site-header__main relative flex justify-between items-center h-15 px-10 transition-height duration-500 xl:px-15 lg:h-20"
   >
     <a href="javascript:;">
       <h1><img src="../../img/home/Vera.svg" alt="" /></h1>
     </a>
-    <div class="wrapper-menu">
-      <div class="line-menu half start"></div>
-      <div class="line-menu"></div>
-      <div class="line-menu half end"></div>
+  </div>
+  <div
+    class="w-full h-screen absolute flex justify-end top-0 right-0 menu-block"
+  >
+    <div class="menu-mask w-full h-full visible absolute top-0 right-0"></div>
+    <div
+      class="max-w-380 w-full h-full px-10 lg:py-30 py-15 relative z-5 menu-box overflow-auto"
+    >
+      <div class="w-full relative h-full grid content-between">
+        <div
+          class="menu-list-box text-white md:text-20px text-18px lg:space-y-8 space-y-4"
+        >
+          <div class="menu-list">
+            <a
+              href="javascript:;"
+              class="w-full menu-title block overflow-hidden"
+              data-second="#menu-1"
+            >
+              經歷介紹
+            </a>
+          </div>
+          <div class="menu-list">
+            <a
+              href="javascript:;"
+              class="w-full menu-title block overflow-hidden"
+              data-second="#menu-1"
+            >
+              UIUX Design
+            </a>
+          </div>
+          <div class="menu-list">
+            <a
+              href="javascript:;"
+              class="w-full menu-title block overflow-hidden"
+              data-second="#menu-1"
+            >
+              前端切版網站
+            </a>
+          </div>
+          <div class="menu-list">
+            <a
+              href="javascript:;"
+              class="w-full menu-title block overflow-hidden"
+              data-second="#menu-1"
+            >
+              視覺形象網站
+            </a>
+          </div>
+        </div>
+        <div class="btn-pro-box btn-header space-y-4">
+          <a
+            href="mailto:q727877q@gmail.com"
+            target="_blank"
+            class="w-full inline-block btn-project"
+            ><div class="more-btn"><p>寄信聯絡</p></div>
+          </a>
+          <a
+            href="tel:0928562898"
+            target="_blank"
+            class="w-full inline-block btn-project"
+            ><div class="more-btn"><p>電話聯絡</p></div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -569,7 +634,7 @@
 <!-- start footer.html-->
 <footer
   id="siteFooter"
-  class="relative z-50 bg-gray-900 px-10 py-10 lg:py-12 lg:rounded-t-3xl"
+  class="relative z-20 bg-gray-900 px-10 py-10 lg:py-12 lg:rounded-t-3xl"
 >
   <div class="mx-auto max-w-1440">
     <div
