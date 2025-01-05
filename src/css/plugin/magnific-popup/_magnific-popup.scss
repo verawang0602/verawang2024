@@ -177,8 +177,8 @@ button::-moz-focus-inner {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
   @include mq(lg) {
-    right: 3.75rem;
-    top: 3.75rem;
+    right: 30px;
+    top: 20px;
   }
 }
 .mfp-close:hover,

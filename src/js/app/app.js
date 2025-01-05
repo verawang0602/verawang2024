@@ -73,6 +73,24 @@
     $(window).on("scroll", checkWindowPosition);
   };
 
+  // const scrollSection = () => {
+  //   function checkUrlHash() {
+  //     if (!$("[data-section]").length) return;
+  //     setTimeout(() => {
+  //       const urlHash = location.hash.slice(1, location.hash.length);
+  //       const targetPosition = $(`[data-section=${urlHash}]`).offset().top;
+  //       $("html, body").animate(
+  //         {
+  //           scrollTop: targetPosition,
+  //         },
+  //         750
+  //       );
+  //     }, 0);
+  //   }
+  //   checkUrlHash();
+  //   $("[data-section-href]").on("click", checkUrlHash);
+  // };
+
   const goAnchor = () => {
     $("[data-anchor]").on("click", function () {
       const target = $(this).data("anchor");
@@ -88,22 +106,22 @@
     });
   };
 
-  const toggleSlide = () => {
-    $("[data-toggle-slide]").on("click", function () {
-      const target = $(this).data("toggle-slide");
-      $(".select-arrow").toggleClass("rotate-180");
-      $(target).slideToggle();
-    });
-  };
-
   const goTop = () => {
-    $(".go-top").on("click", function () {
+    $(".go-top-btn").on("click", function () {
       $("html, body").animate(
         {
           scrollTop: 0,
         },
         750
       );
+    });
+  };
+
+  const toggleSlide = () => {
+    $("[data-toggle-slide]").on("click", function () {
+      const target = $(this).data("toggle-slide");
+      $(".select-arrow").toggleClass("rotate-180");
+      $(target).slideToggle();
     });
   };
 
@@ -191,7 +209,9 @@
         const target = $(this).data("anchor");
         const targetPosition = $(target).offset().top;
         const targetHeight = $(target).outerHeight();
-        const siteAnchorHeight = $(".site-anchor").outerHeight();
+        const siteAnchorHeight = $(
+          ".site-anchor,.site-anchor_list"
+        ).outerHeight();
         if (
           targetPosition - 1 <= scrollTop + 90 + siteAnchorHeight &&
           targetPosition - 1 + targetHeight > scrollTop + 90 + siteAnchorHeight
@@ -240,6 +260,7 @@
     initSwiper();
     initAnimation();
     scrollWindow();
+    // scrollSection();
     goAnchor();
     goTop();
     toggleSlide();

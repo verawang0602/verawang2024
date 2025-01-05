@@ -89,8 +89,8 @@
   }
   100% {
     left: 50%;
-    width: 270px;
-    height: 270px;
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -105,8 +105,8 @@
   }
   100% {
     right: 50%;
-    width: 270px;
-    height: 270px;
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -155,6 +155,22 @@
 }
 
 .btn-project {
+  &.is-active {
+    .more-btn {
+      p {
+        color: $gray-200;
+      }
+      &:before {
+        animation: criss-cross-left 0.8s both;
+        animation-direction: alternate;
+      }
+
+      &:after {
+        animation: criss-cross-right 0.8s both;
+        animation-direction: alternate;
+      }
+    }
+  }
   @include mq(md) {
     &:hover {
       .more-btn {
@@ -206,7 +222,8 @@
     width: 100%;
     max-width: 100%;
     border-radius: 0;
-    background-color: $gray-900;
+    background-color: $gray-700;
+    border: 1px solid $gray-700;
     p {
       color: white;
     }
@@ -217,6 +234,8 @@
     @include mq(lg) {
       border-radius: 5px;
       background-color: white;
+      border: 1px solid currentColor;
+
       p {
         color: $gray-900;
       }
@@ -444,6 +463,7 @@
     opacity: 1;
   }
 }
+
 .anchor-tab {
   li {
     &:hover,

@@ -12,12 +12,32 @@
     <main>
       <nav
         id="projectSideAnchor"
-        class="site-anchor fixed left-0 top-1/2 -translate-y-1/2 z-5 transform"
+        class="site-anchor fixed right-3 top-1/2 -translate-y-1/2 z-5 transform xl:px-2 xl:py-3 p-2 rounded-lg bg-white shadow lg:block hidden"
       >
-        <ul class="space-y-5 anchor-tab">
-          <li data-href="#section-1">
-            <a href="javascript:;" class="text-gray-900 duration-300"
+        <ul class="space-y-2 xl:text-16px text-12px anchor-tab">
+          <li data-anchor="#section-1">
+            <a href="javascript:;" class="text-gray-400 duration-300"
               >前期研究</a
+            >
+          </li>
+          <li data-anchor="#section-2">
+            <a href="javascript:;" class="text-gray-400 duration-300"
+              >優化亮點</a
+            >
+          </li>
+          <li data-anchor="#section-3">
+            <a href="javascript:;" class="text-gray-400 duration-300"
+              >流程架構</a
+            >
+          </li>
+          <li data-anchor="#section-4">
+            <a href="javascript:;" class="text-gray-400 duration-300"
+              >介面設計</a
+            >
+          </li>
+          <li data-anchor="#section-5">
+            <a href="javascript:;" class="text-gray-400 duration-300"
+              >實測原型</a
             >
           </li>
         </ul>
@@ -81,7 +101,90 @@
           </div>
         </div>
       </section>
-      <section class="lg:pt-40 lg:pb-30 py-15 px-10" id="section-1">
+      <section
+        id="sectionMobileAnchor"
+        class="sticky top-15 left-0 z-20 bg-white border-t border-b border-gray-200 lg:hidden duration-300"
+      >
+        <div
+          class="flex justify-between items-center h-12 px-10"
+          data-toggle-slide="#sectionAnchor"
+        >
+          <h3 class="text-gray-900">前期研究</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="14"
+            height="8"
+            viewBox="0 0 14 8"
+            class="select-arrow pointer-events-none duration-300 transform"
+          >
+            <path
+              d="M0,6,6,0l6,6"
+              transform="translate(13 7) rotate(180)"
+              fill="none"
+              stroke="#222222"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+            ></path>
+          </svg>
+        </div>
+        <ul
+          id="sectionAnchor"
+          class="absolute top-full bg-white left-0 hidden w-full text-gray-900 border-t border-b border-gray-200"
+        >
+          <li>
+            <a
+              href="javascript:;"
+              class="flex items-center h-12 px-10"
+              data-anchor="#section-1"
+            >
+              前期研究
+            </a>
+          </li>
+          <li>
+            <a
+              href="javascript:;"
+              class="flex items-center h-12 px-10"
+              data-anchor="#section-2"
+            >
+              優化亮點
+            </a>
+          </li>
+          <li>
+            <a
+              href="javascript:;"
+              class="flex items-center h-12 px-10"
+              data-anchor="#section-3"
+            >
+              流程架構
+            </a>
+          </li>
+          <li>
+            <a
+              href="javascript:;"
+              class="flex items-center h-12 px-10"
+              data-anchor="#section-4"
+            >
+              介面設計
+            </a>
+          </li>
+          <li>
+            <a
+              href="javascript:;"
+              class="flex items-center h-12 px-10"
+              data-anchor="#section-5"
+            >
+              實測原型
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section
+        class="lg:pt-40 lg:pb-30 pt-10 pb-15 px-10"
+        id="section-1"
+        data-anchor-title="前期研究"
+      >
         <div class="mx-auto max-w-1440 lg:space-y-25 space-y-15">
           <div class="flex flex-wrap">
             <div
@@ -516,7 +619,11 @@
           </div>
         </div>
       </section>
-      <section class="lg:py-25 py-15 bg-hoppetta-60 px-10">
+      <section
+        class="lg:py-25 py-15 bg-hoppetta-60 px-10"
+        id="section-2"
+        data-anchor-title="優化亮點"
+      >
         <div class="mx-auto max-w-1440">
           <div class="flex flex-wrap items-end gap-4 lg:mb-8 mb-4">
             <h3 class="lg:text-32px text-24px text-hoppetta-100 font-medium">
@@ -652,7 +759,11 @@
         </div>
       </section>
 
-      <section class="lg:py-25 py-15 px-10">
+      <section
+        class="lg:pt-25 pt-15 px-10"
+        id="section-3"
+        data-anchor-title="流程架構"
+      >
         <div class="mx-auto max-w-1440">
           <div class="lg:mb-30 mb-20">
             <div
@@ -985,6 +1096,14 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section
+        class="lg:pb-25 pb-15 px-10"
+        id="section-4"
+        data-anchor-title="介面設計"
+      >
+        <div class="mx-auto max-w-1440">
           <div class="lg:mb-25 mb-10">
             <h3
               class="lg:text-32px text-24px text-gray-900 font-medium lg:mb-4"
@@ -1473,7 +1592,11 @@
           </div>
         </div>
       </section>
-      <section class="lg:py-15 py-10 bg-gray-100 px-10">
+      <section
+        class="lg:py-15 py-10 bg-gray-100 px-10"
+        id="section-5"
+        data-anchor-title="實測原型"
+      >
         <div class="mx-auto max-w-1440">
           <h3
             class="lg:text-32px text-24px text-hoppetta-100 font-medium lg:mb-6 mb-4"
