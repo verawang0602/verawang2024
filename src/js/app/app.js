@@ -151,6 +151,11 @@
       $(".menu-block").removeClass("show");
       $(".wrapper-menu").removeClass("open");
     });
+    $(".menu-list").on("click", function () {
+      $("body").removeClass("overflow-hidden");
+      $(".menu-block").removeClass("show");
+      $(".wrapper-menu").removeClass("open");
+    });
   };
 
   const scrollHeader = () => {
