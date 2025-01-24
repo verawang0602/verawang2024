@@ -459,19 +459,34 @@
 .site-anchor {
   opacity: 0;
   transition: all 0.5s ease-in-out;
+  background-color: $white;
+  @include mq(xl) {
+    background-color: inherit;
+  }
   &.is-scroll {
     opacity: 1;
+  }
+  h5 {
+    padding-left: 0.75rem;
   }
 }
 
 .anchor-tab {
   li {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
     &:hover,
     &.is-active {
       a {
         font-weight: 600;
         color: $gray-900;
       }
+    }
+    &:hover {
+      background-color: $gray-100;
+    }
+    &.is-active {
+      border: 1px solid $gray-500;
     }
   }
 }
@@ -548,6 +563,18 @@
       .menu-title {
         color: $secondary;
       }
+    }
+  }
+}
+
+.hi-lite_full {
+  .item {
+    padding: 1.25rem;
+    @include mq(md) {
+      padding: 2rem 2.5rem;
+    }
+    @include mq(xl) {
+      padding: 2rem 3.75rem;
     }
   }
 }

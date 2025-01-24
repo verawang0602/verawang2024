@@ -41,3 +41,14 @@ label.error {
 .bg-hi-lite-gradient {
   background-image: linear-gradient(#e6c693, #c8aa78);
 }
+
+.detail-wrap {
+  .px-10 {
+    @include mq(xl) {
+      padding-right: 7.5rem;
+    }
+    @include mq(xxl) {
+      padding-right: 0;
+    }
+  }
+}
