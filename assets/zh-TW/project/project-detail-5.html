@@ -8,7 +8,92 @@
     <link rel="stylesheet" href="../../css/all.css" />
   </head>
   <body>
-    <!-- @@include ../include/header.html -->
+<!-- start header.html-->
+<header id="siteHeader" class="site-header fixed top-0 left-0 w-full z-40">
+  <div
+    class="site-header__bg absolute top-0 left-0 w-full transition-height duration-500 h-0"
+  ></div>
+  <div class="wrapper-menu absolute lg:top-5 top-4 lg:right-15 right-10 z-100">
+    <div class="line-menu half start"></div>
+    <div class="line-menu"></div>
+    <div class="line-menu half end"></div>
+  </div>
+  <div
+    class="site-header__main relative flex justify-between items-center h-15 px-10 transition-height duration-500 xl:px-15 lg:h-20"
+  >
+    <a href="../../zh-TW/home/index.html">
+      <h1><img src="../../img/home/Vera.svg" alt="" /></h1>
+    </a>
+  </div>
+  <div
+    class="w-full h-screen absolute flex justify-end top-0 right-0 menu-block"
+  >
+    <div class="menu-mask w-full h-full visible absolute top-0 right-0"></div>
+    <div
+      class="max-w-380 w-full h-full px-10 lg:py-30 py-20 relative z-5 menu-box overflow-auto lg:rounded-tl-3xl lg:rounded-bl-3xl"
+    >
+      <div class="w-full relative h-full grid content-between">
+        <div class="menu-list-box text-white text-20px lg:space-y-8 space-y-6">
+          <div class="menu-list">
+            <a
+              href="../../zh-TW/about/about.html"
+              class="w-full menu-title block overflow-hidden"
+            >
+              經歷介紹
+            </a>
+          </div>
+          <div class="menu-list">
+            <a
+              href="../project/project-list.html#section-1"
+              class="w-full menu-title block overflow-hidden"
+            >
+              UIUX Design
+            </a>
+          </div>
+          <div class="menu-list">
+            <a
+              href="../project/project-list.html#section-2"
+              class="w-full menu-title block overflow-hidden"
+            >
+              前端切版網站
+            </a>
+          </div>
+          <div class="menu-list">
+            <a
+              href="../project/project-list.html#section-3"
+              class="w-full menu-title block overflow-hidden"
+            >
+              視覺形象網站
+            </a>
+          </div>
+        </div>
+        <div class="btn-pro-box btn-header space-y-4">
+          <a
+            href="mailto:q727877q@gmail.com"
+            target="_blank"
+            class="w-full inline-block btn-project"
+            ><div class="more-btn"><p>寄信聯絡</p></div>
+          </a>
+          <a
+            href="tel:0928562898"
+            target="_blank"
+            class="w-full inline-block btn-project"
+            ><div class="more-btn"><p>電話聯絡</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  var wrapperMenu = document.querySelector(".wrapper-menu");
+
+  wrapperMenu.addEventListener("click", function () {
+    wrapperMenu.classList.toggle("open");
+  });
+</script>
+
+<!-- end header.html-->
     <main class="detail-wrap">
       <nav
         id="projectSideAnchor"
@@ -42,34 +127,18 @@
         <div class="relative px-10 pt-25 pb-7 lg:pt-30 lg:pb-14">
           <div class="mx-auto max-w-1440">
             <h4 class="lg:text-24px text-18px text-gray-600 mb-2">
-              ESG網站內頁模組架構開發
+              創造力互動媒體 後台模組改版
             </h4>
-            <h2
-              class="xl:text-44px lg:text-32px text-24px font-medium lg:mb-11 mb-5"
-            >
-              整合ESG模組，提升開發效率，推動吸引企業合作的方案！
+            <h2 class="xl:text-44px lg:text-32px text-24px font-medium">
+              嶄新介面與優化功能，帶來更直觀與高效的操作體驗，提升管理效率！
             </h2>
-            <div class="flex lg:gap-7 gap-4 btn-pro-box">
-              <a
-                href="https://esg.fbc.com.tw/"
-                target="_blank"
-                class="md:w-45 w-1/2 inline-block btn-project"
-                ><div class="more-btn"><p>台塑生醫案例</p></div>
-              </a>
-              <a
-                href="https://esg.kaori.com.tw/"
-                target="_blank"
-                class="md:w-45 w-1/2 inline-block btn-project"
-                ><div class="more-btn"><p>高力熱處理案例</p></div>
-              </a>
-            </div>
           </div>
         </div>
       </section>
       <section class="relative">
         <img
           class="w-full"
-          src="../../img/project/project-4/project-banner-4.jpg"
+          src="../../img/project/project-5/project-banner-5.jpg"
           alt=""
         />
         <div class="w-full lg:absolute lg:-bottom-15 lg:left-0">
@@ -78,9 +147,9 @@
               class="grid lg:grid-cols-4 grid-cols-2 lg:gap-12 gap-4 bg-gray-100 lg:rounded-2xl lg:px-15 px-10 lg:py-10 py-5"
             >
               <div>
-                <h6 class="lg:text-18px text-gray-700">合作成功案件數：</h6>
+                <h6 class="lg:text-18px text-gray-700">整合網站類型：</h6>
                 <p class="lg:text-24px text-18px text-gray-900 font-medium">
-                  6件
+                  17大類
                 </p>
               </div>
               <div>
@@ -92,13 +161,13 @@
               <div>
                 <h6 class="lg:text-18px text-gray-700">製作時間：</h6>
                 <p class="lg:text-24px text-18px text-gray-900 font-medium">
-                  1 months
+                  1.5 months
                 </p>
               </div>
               <div>
                 <h6 class="lg:text-18px text-gray-700">我的角色：</h6>
                 <p class="lg:text-24px text-18px text-gray-900 font-medium">
-                  架構流程與UI設計
+                  流程/UI設計/易用性測試
                 </p>
               </div>
             </div>
@@ -191,27 +260,17 @@
                   專案介紹
                 </h3>
                 <p class="text-gray-800 lg:mb-5 mb-2">
-                  隨著全球對可持續發展的重視程度不斷提高，企業建立有效的ESG網站已成為一項必要舉措。公司內部為了提升開發效率，期望採用模組化設計的方式，因這類型網站的評分架構一致，無需逐一客製化製作。在接案時，我們只需針對風格進行重新設計，而後台功能和前台架構則保持不變，這一計畫的實施將顯著加速開發時程，使公司能夠承接更多專案，從而提高整體業務運營效率。透過這種方式，我們不僅能夠提供高品質的ESG網站解決方案，還能在市場上保持競爭優勢。
+                  擺脫過時老舊的設計與繁瑣的架構層級，全新界面不僅現代美觀，還針對使用體驗進行全面優化，重新梳理導航結構，讓客戶能輕鬆維護前台資料，輕鬆找到所需功能，避免迷路。
                 </p>
               </div>
               <div>
-                <h4
-                  class="lg:text-24px text-20px font-manrope font-medium text-gray-900 lg:mb-3 mb-1"
+                <h3
+                  class="lg:text-32px text-24px text-gray-900 font-medium mb-4"
                 >
-                  01.我的貢獻
-                </h4>
-                <p class="text-gray-800">
-                  考取ESG評審證照熟悉審核流程及評分重點，規劃完善網站架構，並與程式共同討論後台模組功能的維護方式，再依照客戶需求設計前台風格，將ESG的專案以系統化的方式開發，提升工作效率及確保專案的整體質量與一致性。
-                </p>
-              </div>
-              <div>
-                <h4
-                  class="lg:text-24px text-20px font-manrope font-medium text-gray-900 lg:mb-3 mb-1"
-                >
-                  02.面臨的挑戰
-                </h4>
-                <p class="text-gray-800">
-                  原本客製化開發網站的時間需兩個月，但在模組開發完成後，時程縮短至一個月，前後台功能均能迅速開發完成。此外，內部程式人員能夠共同維護系統，不僅提升了開發效率，還有效解決了反覆重工的問題。前台報告書單元的主題顏色設計也與網站巧妙融合，增強了整體視覺效果。
+                  我的角色和交付成果
+                </h3>
+                <p class="text-gray-800 lg:mb-5 mb-2">
+                  執行專案時我身兼數職，工作內容涵蓋各個方面，包括前期研究、介面設計、流程優化和元件互動等。透過持續優化流程與強化元件互動，致力提升使用者體驗的品質。 我對公司執行過的專案進行類別歸納與功能整合，並最大化後台模組的設計效能。同時，梳理後台架構並進行競品系統介面的深入分析，確保設計決策基於對市場的深度理解與全面評估，為產品未來的發展願景提供清晰的規劃與支持。
                 </p>
               </div>
             </div>
@@ -811,8 +870,126 @@
       </section>
     </main>
 
-    <!-- @@include ../include/footer.html -->
-    <!-- @@include ../include/javascript.html -->
-    <!-- @@include ../include/target_parallax.html -->
+<!-- start footer.html-->
+<footer
+  id="siteFooter"
+  class="relative z-20 bg-gray-900 px-10 py-10 lg:py-12 lg:rounded-t-3xl"
+>
+  <div class="mx-auto max-w-1440">
+    <div
+      class="flex flex-wrap gap-4 items-center justify-between pb-7 border-b border-white border-solid"
+    >
+      <a href="javascript:;">
+        <h1><img src="../../img/footer/footer-vera.svg" alt="" /></h1>
+      </a>
+      <div class="flex-wrap gap-7 hidden sm:flex">
+        <a
+          href="../about/about.html"
+          class="lg:text-20px text-16px text-white duration-300 hover:underline"
+          >經歷介紹</a
+        >
+        <a
+          href="../project/project-list.html#section-1"
+          class="lg:text-20px text-16px text-white duration-300 hover:underline"
+          >UIUX Design</a
+        >
+        <a
+          href="../project/project-list.html#section-2"
+          class="lg:text-20px text-16px text-white duration-300 hover:underline"
+          >視覺形象網站</a
+        >
+        <a
+          href="../project/project-list.html#section-3"
+          class="lg:text-20px text-16px text-white duration-300 hover:underline"
+          >前端切版網站</a
+        >
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-4 items-center justify-between mt-7">
+      <div class="flex flex-wrap items-center lg:gap-7 gap-4">
+        <a
+          href="mailto:q727877q@gmail.com"
+          target="_blank"
+          class="flex gap-x-2 lg:text-18px text-16px text-white font-medium duration-300 hover:underline"
+          ><span class="lg:w-7 w-5"
+            ><img src="../../img/footer/icon-email.svg" alt="" /></span
+          >q727877q@gmail.com</a
+        >
+        <a
+          href="tel:0928562898"
+          class="flex gap-x-2 lg:text-18px text-16px text-white font-medium duration-300 hover:underline"
+          ><span class="lg:w-7 w-5"
+            ><img src="../../img/footer/icon-phone.svg" alt="" /></span
+          >0928-562-898</a
+        >
+      </div>
+      <p class="text-gray-600">
+        © 2025 Vera Wang Powered by Tailwindcss, Nude.js, and GitHub.
+      </p>
+    </div>
+  </div>
+  <button
+    class="go-top-btn fixed right-5 bottom-10 lg:w-12 lg:h-12 w-8 h-8 flex items-center justify-center rounded-full text-secondary bg-white shadow duration-300 hover:bg-secondary hover:text-white"
+  >
+    <svg
+      width="16"
+      height="18"
+      viewBox="0 0 16 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="fill-current lg:w-auto w-3"
+    >
+      <path
+        d="M15.7654 8.03095C15.6911 8.10068 15.6029 8.156 15.5058 8.19374C15.4086 8.23148 15.3046 8.25091 15.1994 8.25091C15.0943 8.25091 14.9902 8.23148 14.8931 8.19374C14.796 8.156 14.7078 8.10068 14.6335 8.03095L8.79985 2.56082V17.25C8.79985 17.4489 8.71557 17.6397 8.56556 17.7803C8.41554 17.921 8.21207 18 7.99991 18C7.78775 18 7.58428 17.921 7.43426 17.7803C7.28424 17.6397 7.19996 17.4489 7.19996 17.25V2.56082L1.36635 8.03095C1.21625 8.17168 1.01267 8.25074 0.800391 8.25074C0.588114 8.25074 0.384532 8.17168 0.234429 8.03095C0.0843266 7.89023 1.58159e-09 7.69936 0 7.50034C-1.58159e-09 7.30133 0.0843266 7.11046 0.234429 6.96974L7.43395 0.219958C7.50824 0.150228 7.59646 0.0949103 7.69358 0.0571683C7.79069 0.0194264 7.89478 0 7.99991 0C8.10503 0 8.20913 0.0194264 8.30624 0.0571683C8.40335 0.0949103 8.49158 0.150228 8.56587 0.219958L15.7654 6.96974C15.8398 7.03939 15.8988 7.1221 15.939 7.21315C15.9793 7.30419 16 7.40179 16 7.50034C16 7.5989 15.9793 7.69649 15.939 7.78754C15.8988 7.87859 15.8398 7.9613 15.7654 8.03095Z"
+      />
+    </svg>
+  </button>
+</footer>
+
+<!-- end footer.html-->
+<!-- start javascript.html-->
+<script src="../../js/vendor.js"></script>
+<script src="../../js/app.js"></script>
+
+<!-- end javascript.html-->
+<!-- start target_parallax.html-->
+<script>
+  const target_parallax = () => {
+    function setParallax(type, target) {
+      let offset = {};
+
+      if (type === "horizontal") {
+        offset = {
+          x: (window.innerWidth * target.dataset["parallaxX"]) / 10,
+        };
+      } else if ((type = "vertical")) {
+        offset = {
+          y: (window.innerHeight * target.dataset["parallaxY"]) / 10,
+        };
+      }
+
+      gsap.to(target, {
+        scrollTrigger: {
+          trigger: target,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1,
+        },
+        ...offset,
+        ease: "none",
+      });
+    }
+    gsap.utils.toArray("[data-parallax-x]").forEach((target) => {
+      setParallax("horizontal", target);
+    });
+
+    gsap.utils.toArray("[data-parallax-y]").forEach((target) => {
+      setParallax("vertical", target);
+    });
+  };
+  target_parallax();
+</script>
+
+<!-- end target_parallax.html-->
   </body>
 </html>
