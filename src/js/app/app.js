@@ -37,6 +37,22 @@
         clickable: true,
       },
     });
+    new Swiper(".competitive .swiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed: 1000,
+      loop: $(".competitive .swiper-slide").length > 1,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+
+      navigation: {
+        nextEl: ".competitive .swiper-button-next",
+        prevEl: ".competitive .swiper-button-prev",
+        clickable: true,
+      },
+    });
   };
 
   const initAnimation = () => {
